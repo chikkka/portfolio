@@ -1,0 +1,62 @@
+#contact{
+  margin: 0 auto;
+  text-align: center;
+}
+
+form{
+  font-size: 0.6rem;
+}
+
+#contact > form > div{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 30px;
+}
+
+.contact-heading{
+  width: 240px;
+  align-self: center;
+}
+
+.contact-label{
+  font-weight: bold;
+}
+
+.contact-span{
+  color: #8b0000;
+  font-weight: bold;
+  margin: 0 0 0 20px;
+}
+
+.contact-textbox{
+  width: 2rem;
+  height: 1rem;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 2px;
+  /* 入力する欄の影 */
+  border-bottom-color: #808080;
+  border-bottom-style: solid;
+  /* 入力する箇所のバックカラー */
+  background-color: #fffafa; 
+}
+
+.contact-textarea{
+  width: 2rem;
+  height: 3rem;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom-width: 2px;
+  border-bottom-color: #808080;
+  border-bottom-style: solid;
+  background-color: #fffafa;
+}
+
+#send{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
