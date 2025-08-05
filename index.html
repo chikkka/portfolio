@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="私のポートフォリオ" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scale=no"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- <link rel="stylesheet" href="./css/respon.css" /> -->
+    <title>.Studio Chika </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Josefin+Sans:wght@300&family=Kiwi+Maru:wght@300&family=M+PLUS+Rounded+1c:wght@100&family=Noto+Sans+JP:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ファビコン -->
+    <link rel="icon" href="./img/fa.png" />
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-------------------- header -------------------->
+    <header>
+      <div id="header-pc">
+        <h1 id="header-logo">
+          <a id="header-logo-txt" href="index.html">Studio Chika</a>
+          <div id="header-logo-img_wrap">
+            <a id="header-logo-img" href="">
+              <img src="./img/StudioChika.png">
+            </a>
+            <a id="bear-talk" href="">
+              <img src="./img/bear-talk_1.png">
+              <img src="./img/bear-talk_2.png">
+              <img src="./img/bear-talk_3.png">
+              <img src="./img/bear-talk_4.png">
+              <img src="./img/bear-talk_5.png">
+              <img src="./img/bear-talk_6.png">
+              <img src="./img/bear-talk_7.png">
+              <img src="./img/bear-talk_8.png">
+              <img src="./img/bear-talk_9.png">
+            </a>
+          </div>
+        </h1>
+        <!-- pc用ナビゲーション -->
+        <nav id="nav-pc">
+          <ul>
+            <li>
+              <div class="nav-pc_content">
+                <div class="cat-popup">
+                  <img src="./img/popuup.png" alt="">
+                </div>
+                <a href="./Works.html">
+                  Works<br><span class="japan">制作実績</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-pc_content">
+                <div class="cat-popup">
+                  <img src="./img/popuup.png" alt="">
+                </div>
+                <a href="./blog.html">
+                  Blog<br><span class="japan">ブログ</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-pc_content">
+                <div class="cat-popup">
+                  <img src="./img/popuup.png" alt="">
+                </div>
+                <a href="./about.html">
+                  About Me<br><span class="japan">わたしのこと</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-pc_content">
+                <div class="cat-popup">
+                  <img src="./img/popuup.png" alt="">
+                </div>
+                <a href="#services">
+                Services<br><spnan class="japan">お仕事内容</spnan>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-pc_content">
+                <div class="cat-popup">
+                  <img src="./img/popuup.png" alt="">
+                </div>
+                <a href="./contact.html">
+                  Contact<br><span class="japan">お問い合わせ</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-pc_content">
+                <div class="cat-popup">
+                  <img src="./img/popuup.png" alt="">
+                </div>
+                <a href="./faq.html">
+                  FAQ<br><span class="japan">よくある質問</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <div id="icon-instagram" >
+            <a href="">
+              <div id="icon-instagram_txt">
+                Instagram
+              </div>
+              <div id="icon-instagram_img">
+                <img src="./img/portoforio-instagram.png" alt="Instagramのアイコン画像">
+              </div>
+            </a>
+          </div>
+        </nav>
+      </div>
+      <!----------- ハンバーガーナビ --------------> 
+      <nav id="nav-hum">
+        <!-- Homeをクリックするとworksに飛び、ナビゲーションが閉じる -->
+        <a
+          href="./index.html"
+          onclick="document.getElementById('nav-hum').style.display = 'none'"
+        >
+          Home</a
+        >
+        <!-- Aboutmeをクリックするとblogに飛び、ナビゲーションが閉じる -->
+        <a
+          href="./about.html"
+          onclick="document.getElementById('nav-hum').style.display = 'none'"
+        >
+          About me</a
+        >
+        <!-- blogをクリックするとabout.htmlに飛び、ナビゲーションが閉じる -->
+        <a
+          href="./blog.html"
+          onclick="document.getElementById('nav-hum').style.display = 'none'"
+        >
+          Blog</a
+        >
+        <!-- worksをクリックするとcontactに飛び、ナビゲーションが閉じる -->
+        <a
+          href="./works.html"
+          onclick="document.getElementById('nav-hum').style.display = 'none'"
+        >
+          Works</a
+        >
+        <!-- serviceをクリックするとcontactに飛び、ナビゲーションが閉じる -->
+        <a
+          href="./service.html"
+          onclick="document.getElementById('nav-hum').style.display = 'none'"
+        >
+          Services</a
+        >
+        <!-- contactをクリックするとcontactに飛び、ナビゲーションが閉じる -->
+        <a
+          href="./contact.html"
+          onclick="document.getElementById('nav-hum').style.display = 'none'"
+        >
+          Contact</a
+        >
+        <!-- faqをクリックするとcontactに飛び、ナビゲーションが閉じる -->
+        <a
+          href="./faq.html"
+          onclick="document.getElementById('nav-hum').style.display = 'none'"
+        >
+          FAQ</a
+        >
+      </nav>
+    </header>
+
+    <!--------------------- main ----------------------->
+    <div id="main">
+      <!----------------- main-visual ------------------->
+      <div id="main-visual_pc">
+        <img src="./img/top-pc.png" alt=""/>
+        <p>
+          「ねこの手も借りたい」<br>をお手伝いします
+        </p>
+      </div>
+      <div id="main-visual_sp">
+        <img src="./img/top-sp.png" alt=""/>
+        <p>
+          "ねこの手も借りたい”をお手伝いします
+        </p>
+      </div>
+      <!------------------------- line ----------------------->
+      <div id="line-wrap">
+        <div class="popup-line-message">
+          <img src="./img/line-message.png">
+        </div>
+        <a  id="line-img" href="">
+          <img src="./img/line-icon.png">
+        </a>
+      </div>
+
+      <!--------------------------works----------------------->
+      <article id="works">
+        <h1 class="ttl">Works-制作実績</h1>
+        <ul>
+          <li>
+            <div class="works-thumbnail">
+              <a href="./works.html">
+                <img src="./img/blog_3.jpg" alt="" />
+              </a>
+            </div>
+            <p>2025年制作</p>
+            <p>エステサロンサイト</p>
+          </li>
+          <li>
+            <div class="works-thumbnail">
+              <a href="./works.html">
+                <img src="./img/blog_3.jpg" alt="" />
+              </a>
+            </div>
+            <p>2025年制作</p>
+            <p>エステサロンサイト</p>
+          </li>
+          <li>
+            <div class="works-thumbnail">
+              <a href="./works.html">
+                <img src="./img/blog_3.jpg" alt="" />
+              </a>
+            </div>
+            <p>2025年制作</p>
+            <p>エステサロンサイト</p>
+          </li>
+        </ul>
+      </article>
+      <!------------------------- Service -------------------->
+      <article id="service">
+        <h1 class="ttl">Serviceーお仕事内容</h1>
+        <ul>
+          <li>
+            <div id="service-html" class="service-thumbnail" >
+              <img src="./img/cat-html-css.png">
+            </div>
+          </li>
+          <li>
+            <div id="service-daiko" class="service-thumbnail" >
+              <img src="./img/cat-daiko.png">
+            </div>
+          </li>
+          <li>
+            <div id="service-wp" class="service-thumbnail" >
+              <img src="./img/cat-wordpress.png">
+            </div>
+          </li>
+          <li>
+            <div id="service-design" class="service-thumbnail" >
+              <img src="./img/cat-design.png">
+            </div>
+          </li>
+        </ul>
+        <!-- ポップアップが表示された時に背景色を変える -->
+        <div id="mask" class="mask-hidden" ></div>
+        <section id="service-popup" class="service-hidden" >
+          <div id="service-popup__html" class="service-html__hidden" >
+            <h2 class="service-popup__ttl">HTML/CSS</h2>
+            <div class="service-popup__txt">
+              <p>
+                お客様の想いをカタチにするため、丁寧で見やすく、保守性の高いコーディングを心がけています。<br>
+                デザインカンプからのコーディングはもちろん、レスポンシブ対応やアニメーションの実装もご相談ください。<br>
+                SEO・アクセシビリティにも配慮したコーディングを行います。
+              </p>
+            </div>
+            <div class="close-btn__html">閉じる</div>
+          </div>
+          <div id="service-popup__daiko" class="service-daiko__hidden" >
+            <h2 class="service-popup__ttl">運用代行</h2>
+            <div class="service-popup__txt">
+              <p>
+                「忙しくて更新が止まっている」「ブログやお知らせを発信したいけど時間がない」。。。<br>
+                そんなお悩みを解決します。<br>テキスト修正や画像の差し替え、記事の更新など、必要なタイミングで柔軟に対応いたします。<br>
+                LINEやInstagramといったSNSの連携サポートも可能です。
+              </p>
+            </div>
+            <div class="close-btn__daiko">閉じる</div>
+          </div>
+          <div id="service-popup__wp" class="service-wp__hidden" >
+            <h2 class="service-popup__ttl">WordPress</h2>
+            <div class="service-popup__txt">
+              <p>
+                企業サイトやブログ型サイトなど、ご要望に合わせたWordPressサイトを構築します。<br>
+                既存テーマのカスタマイズはもちろん、ゼロからのオリジナルテーマ作成にも対応可能です。<br>
+                更新しやすく」「見た目にもわかりやすい」管理画面の構成を重視しています。
+              </p>
+            </div>
+            <div class="close-btn__wp">閉じる</div>
+          </div>
+          <div id="service-popup__design" class="service-design__hidden" >
+            <h2 class="service-popup__ttl">design</h2>
+            <div class="service-popup__txt">
+              <p>
+                見る人の心に残るデザインを意識しながら、ユーザー目線で使いやすい設計を心がけています。<br>
+                配色・余白・フォント選びなど細部までこだわり、信頼感のあるビジュアルに仕上げます。<br>
+                バナーやサムネイルなどのパーツ制作も対応しています。）
+              </p>
+            </div>
+            <div class="close-btn__design">閉じる</div>
+          </div>
+        </section>
+      </article>
+      <!------------------------- Blog ----------------------->
+      <article id="blog">
+        <h2 class="ttl">Blogー日々のできごと</h2>
+        <div class="blog-txt_wrap">
+          <div class="blog-label_new">new</div>
+          <div class="blog-thumbnail">
+            <a href="./blog.html">
+              <img src="./img/blog_3.jpg">
+            </a>
+          </div>
+          <div class="blog-content">
+            <p class="blog-date">2025/7/9</p>
+            <p class="blog-text">誕生日でした</p>
+            <p class="blog-readmore">
+              <a href="./blog.html" class="blog-next">
+                続きを読む
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="blog-txt_wrap">
+          <div class="blog-thumbnail">       
+            <a href="">
+              <img src="./img/blog_3.jpg">
+            </a>
+          </div>
+          <div class="blog-content">
+            <p class="blog-date">2025/7/2</p>
+            <p class="blog-text">ジブリ展に行ってきました</p>
+            <p class="blog-readmore">
+              <a href="./blog.html" class="blog-next">
+                続きを読む
+              </a>
+            </p>
+          </div>
+        </div>
+        <p id="blog-back-number">
+          <a href="./blog.html" id="past-posts">
+            過去の記事を読む
+          </a>
+        </p>
+      </article>
+    <!--------------------------- footer -------------------->
+    <footer>
+      <!-- pc用ナビゲーション -->
+      <div id="footer-content_wrap">
+        <div id="footer-icon-wrap">
+          <div class="footer-logo">
+            <a id="footer-logo_txt" href="index.html">
+              Studio Chika
+            </a>
+            <p>
+              <a href="">
+                <img src="./img/StudioChika.png">
+              </a>
+            </p>
+          </div>
+          <div id="footer-icon-instagram">
+            <a href="">
+              Instagram
+              <div>
+                <img src="./img/portoforio-instagram.png" alt="Instagramのアイコン画像">
+              </div>
+            </a>
+          </div>
+        </div>
+        <nav id="footer-nav_pc">
+          <ul>
+            <li>
+              <a href="./Works.html">
+                Works
+              </a>
+            </li>
+            <li>
+              <a href="./blog.html">
+                Blog
+              </a>
+            </li>
+            <li>
+              <a href="./contact.html">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <p id="copy">
+        &copy; Studio Chika 2025
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
