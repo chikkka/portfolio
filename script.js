@@ -130,3 +130,51 @@ document.addEventListener("DOMContentLoaded", function () {
     closeBtnHtml.click();
   });
 });
+
+// ハートの挙動
+document.addEventListener("DOMContentLoaded", () => {
+  const likeContainers = document.querySelectorAll(".like-container");
+
+  likeContainers.forEach((container, index) => {
+    const heart = container.querySelector(".heart");
+    const count = container.querySelector(".count");
+
+    // ローカルストレージキー
+    const key = `like-count-${index}`;
+    let likeCount = parseInt(localStorage.getItem(key)) || 0;
+
+    updateCountDisplay();
+
+    heart.addEventListener("click", () => {
+      // クリック上限なし（ただし保存される）
+      likeCount++;
+      localStorage.setItem(key, likeCount);
+      heart.classList.add("liked");
+      updateCountDisplay();
+      createHeartEffects(heart);
+    });
+
+    function updateCountDisplay() {
+      if (likeCount >= 1000000) {
+        count.textContent = (likeCount / 1000000).toFixed(1) + "m";
+      } else if (likeCount >= 1000) {
+        count.textContent = (likeCount / 1000).toFixed(1) + "k";
+      } else {
+        count.textContent = likeCount;
+      }
+    }
+
+    function createHeartEffects(element) {
+      for (let i = 0; i < 6; i++) {
+        const eff = document.createElement("div");
+        eff.className = "heart-effect";
+        eff.style.left = "50%";
+        eff.style.top = "50%";
+        eff.style.setProperty("--x", `${Math.random() * 60 - 30}px`);
+        eff.style.setProperty("--y", `${-Math.random() * 60 - 20}px`);
+        container.appendChild(eff);
+        setTimeout(() => eff.remove(), 800);
+      }
+    }
+  });
+});

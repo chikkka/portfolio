@@ -9,243 +9,237 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/contact.css" />
-    <link rel="stylesheet" href="./css/respon.css" />
-    <title>.nekonote お手伝いいたします</title>
+    <!-- <link rel="stylesheet" href="./css/respon.css" /> -->
+    <title>.Studio Chika</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Josefin+Sans:wght@300&family=Kiwi+Maru:wght@300&family=M+PLUS+Rounded+1c:wght@100&family=Noto+Sans+JP:wght@300;400&display=swap"
       rel="stylesheet"
     />
+    <!-- ファビコン -->
     <link rel="icon" href="./img/fa.png" />
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- header -->
+    <!-------------------- header -------------------->
     <header>
-      <h1 class="logo">
-        <a href="index.html">.nekonote</a>
-      </h1>
-
-      <!-- ハンバーガーメニューのアイコン -->
-      <img
-        id="hum-icon"
-        src="./img/hum.png"
-        alt="ナビゲーションを開く"
-        onclick="document.getElementById('nav-hum').style.display = 'block'"
-      />
-
-      <!-- pc用ナビゲーション -->
-      <nav class="nav-pc">
-        <ul>
-          <li>
-            <a href="./index.html#works"> works </a>
-          </li>
-          <li>
-            <a href="./index.html#blog"> blog </a>
-          </li>
-          <li>
-            <a href="./about.html"> about </a>
-          </li>
-          <li>
-            <a href="./contact.html"> contact </a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- ハンバーガーナビ -->
+      <div id="header-pc">
+        <h1 id="header-logo">
+          <a id="header-logo-txt" href="index.html">Studio Chika</a>
+          <div id="header-logo-img_wrap">
+            <a id="header-logo-img" href="./index.html">
+              <img src="./img/StudioChika.png" />
+            </a>
+            <a id="bear-talk" href="">
+              <img src="./img/bear-talk_1.png" />
+              <img src="./img/bear-talk_2.png" />
+              <img src="./img/bear-talk_3.png" />
+              <img src="./img/bear-talk_4.png" />
+              <img src="./img/bear-talk_5.png" />
+              <img src="./img/bear-talk_6.png" />
+              <img src="./img/bear-talk_7.png" />
+              <img src="./img/bear-talk_8.png" />
+              <img src="./img/bear-talk_9.png" />
+            </a>
+          </div>
+        </h1>
+        <!-- pc用ナビゲーション -->
+        <nav id="nav-pc">
+          <ul>
+            <li>
+              <div class="nav-pc_content">
+                <div class="cat-popup">
+                  <img src="./img/popuup.png" alt="" />
+                </div>
+                <a href="./works-archive.html">
+                  Works<br /><span class="japan">制作実績</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-pc_content">
+                <div class="cat-popup">
+                  <img src="./img/popuup.png" alt="" />
+                </div>
+                <a href="./index.html#service">
+                  Services<br /><spnan class="japan">お仕事内容</spnan>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-pc_content">
+                <div class="cat-popup">
+                  <img src="./img/popuup.png" alt="" />
+                </div>
+                <a href="./blog-archive.html">
+                  Blog<br /><span class="japan">ブログ</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-pc_content">
+                <div class="cat-popup">
+                  <img src="./img/popuup.png" alt="" />
+                </div>
+                <a href="./about.html">
+                  About Me<br /><span class="japan">わたしのこと</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-pc_content">
+                <div class="cat-popup">
+                  <img src="./img/popuup.png" alt="" />
+                </div>
+                <a href="./contact.html">
+                  Contact<br /><span class="japan">お問い合わせ</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-pc_content">
+                <div class="cat-popup">
+                  <img src="./img/popuup.png" alt="" />
+                </div>
+                <a href="./faq.html">
+                  FAQ<br /><span class="japan">よくある質問</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <div id="icon-instagram">
+            <a href="">
+              <div id="icon-instagram_txt">Instagram</div>
+              <div id="icon-instagram_img">
+                <img
+                  src="./img/portoforio-instagram.png"
+                  alt="Instagramのアイコン画像"
+                />
+              </div>
+            </a>
+          </div>
+        </nav>
+      </div>
+      <!----------- ハンバーガーナビ -------------->
       <nav id="nav-hum">
-        <!-- ×でナビゲーションを閉じる -->
-        <img
-          id="close"
-          src="./img/batsu.png"
-          width="20px"
-          height=""
-          20px
-          alt="ナビゲーションを閉じる"
-          onclick="document.getElementById('nav-hum').style.display = 'none'"
-        />
-
-        <!-- トップに戻る -->
+        <!-- Homeをクリックするとworksに飛び、ナビゲーションが閉じる -->
         <a
-          href="index.html"
+          href="./index.html"
           onclick="document.getElementById('nav-hum').style.display = 'none'"
         >
-          <img id="toTop" src="./img/totop.png" alt="トップページに戻る" />
-        </a>
-        <!-- worksをクリックするとworksに飛び、ナビゲーションが閉じる -->
+          Home</a
+        >
+        <!-- Aboutmeをクリックするとblogに飛び、ナビゲーションが閉じる -->
         <a
-          class="menu"
-          href="./index.html#works"
-          onclick="document.getElementById('nav-hum').style.display = 'none'"
-        >
-          works</a
-        >
-        <!-- blogをクリックするとblogに飛び、ナビゲーションが閉じる -->
-        <a
-          class="menu"
-          href="./index.html#blog"
-          onclick="document.getElementById('nav-hum').style.display = 'none'"
-        >
-          blog</a
-        >
-        <!-- abutをクリックするとabout.htmlに飛び、ナビゲーションが閉じる -->
-        <a
-          class="menu"
           href="./about.html"
           onclick="document.getElementById('nav-hum').style.display = 'none'"
         >
-          about</a
+          About me</a
+        >
+        <!-- blogをクリックするとabout.htmlに飛び、ナビゲーションが閉じる -->
+        <a
+          href="./blog.html"
+          onclick="document.getElementById('nav-hum').style.display = 'none'"
+        >
+          Blog</a
+        >
+        <!-- worksをクリックするとcontactに飛び、ナビゲーションが閉じる -->
+        <a
+          href="./works.html"
+          onclick="document.getElementById('nav-hum').style.display = 'none'"
+        >
+          Works</a
+        >
+        <!-- serviceをクリックするとcontactに飛び、ナビゲーションが閉じる -->
+        <a
+          href="./service.html"
+          onclick="document.getElementById('nav-hum').style.display = 'none'"
+        >
+          Services</a
         >
         <!-- contactをクリックするとcontactに飛び、ナビゲーションが閉じる -->
         <a
-          class="menu"
           href="./contact.html"
           onclick="document.getElementById('nav-hum').style.display = 'none'"
         >
-          contact</a
+          Contact</a
+        >
+        <!-- faqをクリックするとcontactに飛び、ナビゲーションが閉じる -->
+        <a
+          href="./faq.html"
+          onclick="document.getElementById('nav-hum').style.display = 'none'"
+        >
+          FAQ</a
         >
       </nav>
     </header>
 
-    <!-- お問い合わせフォーム -->
+    <!--------------------- main ----------------------->
+    <div id="main">
+      <!------------------------- line ----------------------->
+      <div id="line-wrap">
+        <div class="popup-line-message">
+          <img src="./img/line-message.png" />
+        </div>
+        <a id="line-img" href="">
+          <img src="./img/line-icon.png" />
+        </a>
+      </div>
+    </div>
+
+    <!--------------------------contact----------------------->
     <article id="contact">
-      <h2 class="ttl">contact</h2>
-      <form>
-        <div>
-          <div class="contact-heading">
-            <label class="contact-label"
-              >お名前<span class="contact-span">必須</span></label
-            >
-          </div>
-          <div>
-            <input
-              type="text"
-              name="name"
-              placeholder="入力してください"
-              class="contact-textbox"
-            />
-          </div>
-        </div>
-
-        <div>
-          <div class="contact-heading">
-            <label class="contact-label"
-              >フリガナ<span class="contact-span">必須</span></label
-            >
-          </div>
-          <div>
-            <input
-              type="text"
-              name="hurigana"
-              placeholder="入力して下さい"
-              class="contact-textbox"
-            />
-          </div>
-        </div>
-
-        <div>
-          <div class="contact-heading">
-            <label class="contact-label"
-              >メールアドレス<span class="contact-span">必須</span></label
-            >
-          </div>
-          <div>
-            <input
-              type="text"
-              name="email"
-              placeholder="入力して下さい"
-              class="contact-textbox"
-            />
-          </div>
-        </div>
-
-        <div>
-          <div class="contact-heading">
-            <label class="contact-label">電話番号</label>
-          </div>
-          <div>
-            <input
-              type="text"
-              name="tel"
-              placeholder="入力して下さい"
-              class="contact-textbox"
-            />
-          </div>
-        </div>
-
-        <div>
-          <div class="contact-heading">
-            <label class="contact-label"
-              >お問い合わせ内容<span class="contact-span">必須</span></label
-            >
-          </div>
-          <div>
-            <textarea
-              class="contact-textarea"
-              placeholder="入力して下さい"
-              name="message"
-            ></textarea>
-          </div>
-        </div>
-        <div>
-          <div class="contact-heading">
-            <label class="contact-label">ご希望の連絡先<span>必須</span></label>
-          </div>
-          <div>
-            <input
-              class="radiobutton"
-              type="radio"
-              value="tel"
-              name="contact"
-              checked
-            /><label>お電話</label>
-            <input
-              class="radiobutton"
-              type="radio"
-              value="mail"
-              name="contact"
-            /><label>メール</label>
-            <input
-              class="radiobutton"
-              type="radio"
-              value="both"
-              name="contact"
-            /><label>どちらでも</label>
-          </div>
-        </div>
-
-        <!-- 送信ボタン -->
-        <p id="send">
-          <input
-            class="sendButton"
-            type="image"
-            src="./img/send.png"
-            width="110px"
-            height="40px"
-            alt="送信する"
-          />
-        </p>
-      </form>
+      <h1 class="ttl">お問い合わせ</h1>
     </article>
 
-    <!-- footer -->
+    <!--------------------------- footer -------------------->
     <footer>
-      <nav class="nav-pc">
-        <ul>
-          <li>
-            <a href="./index.html#works">works</a>
-          </li>
-          <li>
-            <a href="./index.html#blog">blog</a>
-          </li>
-          <li>
-            <a href="./about.html">about</a>
-          </li>
-          <li>
-            <a href="./contact.html">contact</a>
-          </li>
-        </ul>
-      </nav>
+      <!-- pc用ナビゲーション -->
+      <div id="footer-content_wrap">
+        <div id="footer-icon-wrap">
+          <div class="footer-logo">
+            <a id="footer-logo_txt" href="index.html"> Studio Chika </a>
+            <p>
+              <a href="">
+                <img src="./img/StudioChika.png" />
+              </a>
+            </p>
+          </div>
+          <div id="footer-icon-instagram">
+            <a href="">
+              Instagram
+              <div>
+                <img
+                  src="./img/portoforio-instagram.png"
+                  alt="Instagramのアイコン画像"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+        <nav id="footer-nav_pc">
+          <ul>
+            <li>
+              <a href="./works-archive.html"> Works </a>
+            </li>
+            <li>
+              <a href="./blog-archive.html"> Blog </a>
+            </li>
+            <li>
+              <a href="./contact.html"> Contact </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <p id="copy">&copy; Studio Chika 2025</p>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

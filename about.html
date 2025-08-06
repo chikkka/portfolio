@@ -1,109 +1,273 @@
 <!DOCTYPE html>
 <html lang="ja">
   <head>
-    <meta charset="utf-8">
-    <meta name="description" content="私のポートフォリオ">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scale=no">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/about.css">
-    <link rel="stylesheet" href="./css/respon.css">
-    <title>.nekonote  お手伝いいたします</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Josefin+Sans:wght@300&family=Kiwi+Maru:wght@300&family=M+PLUS+Rounded+1c:wght@100&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="icon" href="./img/fa.png">
+    <meta charset="utf-8" />
+    <meta name="description" content="私のポートフォリオ" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scale=no"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <!-- <link rel="stylesheet" href="./css/respon.css" /> -->
+    <title>.Studio Chika</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Josefin+Sans:wght@300&family=Kiwi+Maru:wght@300&family=M+PLUS+Rounded+1c:wght@100&family=Noto+Sans+JP:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ファビコン -->
+    <link rel="icon" href="./img/fa.png" />
+    <!-- googlefonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <!-- header -->
+    <!-------------------- header -------------------->
     <header>
-      <h1 class="logo">
-        <a href="index.html">.nekonote</a>
-      </h1>
-
-      <!-- ハンバーガーメニューのアイコン -->
-      <img id="hum-icon" src="./img/hum.png" alt="ナビゲーションを開く" onclick="document.getElementById('nav-hum').style.display = 'block'">
-
-      <!-- pc用ナビゲーション -->
-      <nav class="nav-pc">
-        <ul>
-          <li>
-            <a href="./index.html#works">works</a>
-          </li>
-          <li>
-            <a href="./index.html#blog">blog</a>
-          </li>
-          <li>
-            <a href="./about.html">about</a>
-          </li>
-          <li>
-            <a href="./contact.html">contact</a>
-          </li>
-        </ul>
-      </nav>
-
-      <!-- ハンバーガーナビ -->
-      <nav id="nav-hum"> 
-        <!-- ×でナビゲーションを閉じる -->
-        <img  id="close" src="./img/batsu.png" width="20px" height=""20px alt="ナビゲーションを閉じる" onclick="document.getElementById('nav-hum').style.display = 'none'">
-
-        <!-- トップに戻る -->
-        <a href="index.html" onclick="document.getElementById('nav-hum').style.display = 'none'">
-          <img id="toTop" src="./img/totop.png" alt="トップページに戻る">
-        </a>
-        <!-- worksをクリックするとworksに飛び、ナビゲーションが閉じる -->
-        <a class="menu" href="./index.html#works" onclick="document.getElementById('nav-hum').style.display = 'none'">
-        works</a>
-        <!-- blogをクリックするとblogに飛び、ナビゲーションが閉じる -->
-        <a class="menu" href="./index.html#blog" onclick="document.getElementById('nav-hum').style.display = 'none'">
-        blog</a>
-        <!-- abutをクリックするとabout.htmlに飛び、ナビゲーションが閉じる -->
-        <a class="menu" href="./about.html" onclick="document.getElementById('nav-hum').style.display = 'none'">
-        about</a>
+      <div id="header-pc">
+        <h1 id="header-logo">
+          <a id="header-logo-txt" href="index.html">Studio Chika</a>
+          <div id="header-logo-img_wrap">
+            <a id="header-logo-img" href="./index.html">
+              <img src="./img/StudioChika.png" />
+            </a>
+            <a id="bear-talk" href="">
+              <img src="./img/bear-talk_1.png" />
+              <img src="./img/bear-talk_2.png" />
+              <img src="./img/bear-talk_3.png" />
+              <img src="./img/bear-talk_4.png" />
+              <img src="./img/bear-talk_5.png" />
+              <img src="./img/bear-talk_6.png" />
+              <img src="./img/bear-talk_7.png" />
+              <img src="./img/bear-talk_8.png" />
+              <img src="./img/bear-talk_9.png" />
+            </a>
+          </div>
+        </h1>
+        <!-- pc用ナビゲーション -->
+        <nav id="nav-pc">
+          <ul>
+            <li>
+              <div class="nav-pc_content">
+                <div class="cat-popup">
+                  <img src="./img/popuup.png" alt="" />
+                </div>
+                <a href="./works-archive.html">
+                  Works<br /><span class="japan">制作実績</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-pc_content">
+                <div class="cat-popup">
+                  <img src="./img/popuup.png" alt="" />
+                </div>
+                <a href="./index.html#service">
+                  Services<br /><spnan class="japan">お仕事内容</spnan>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-pc_content">
+                <div class="cat-popup">
+                  <img src="./img/popuup.png" alt="" />
+                </div>
+                <a href="./blog-archive.html">
+                  Blog<br /><span class="japan">ブログ</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-pc_content">
+                <div class="cat-popup">
+                  <img src="./img/popuup.png" alt="" />
+                </div>
+                <a href="./about.html">
+                  About Me<br /><span class="japan">わたしのこと</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-pc_content">
+                <div class="cat-popup">
+                  <img src="./img/popuup.png" alt="" />
+                </div>
+                <a href="./contact.html">
+                  Contact<br /><span class="japan">お問い合わせ</span>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="nav-pc_content">
+                <div class="cat-popup">
+                  <img src="./img/popuup.png" alt="" />
+                </div>
+                <a href="./faq.html">
+                  FAQ<br /><span class="japan">よくある質問</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+          <div id="icon-instagram">
+            <a href="">
+              <div id="icon-instagram_txt">Instagram</div>
+              <div id="icon-instagram_img">
+                <img
+                  src="./img/portoforio-instagram.png"
+                  alt="Instagramのアイコン画像"
+                />
+              </div>
+            </a>
+          </div>
+        </nav>
+      </div>
+      <!----------- ハンバーガーナビ -------------->
+      <nav id="nav-hum">
+        <!-- Homeをクリックするとworksに飛び、ナビゲーションが閉じる -->
+        <a
+          href="./index.html"
+          onclick="document.getElementById('nav-hum').style.display = 'none'"
+        >
+          Home</a
+        >
+        <!-- Aboutmeをクリックするとblogに飛び、ナビゲーションが閉じる -->
+        <a
+          href="./about.html"
+          onclick="document.getElementById('nav-hum').style.display = 'none'"
+        >
+          About me</a
+        >
+        <!-- blogをクリックするとabout.htmlに飛び、ナビゲーションが閉じる -->
+        <a
+          href="./blog.html"
+          onclick="document.getElementById('nav-hum').style.display = 'none'"
+        >
+          Blog</a
+        >
+        <!-- worksをクリックするとcontactに飛び、ナビゲーションが閉じる -->
+        <a
+          href="./works.html"
+          onclick="document.getElementById('nav-hum').style.display = 'none'"
+        >
+          Works</a
+        >
+        <!-- serviceをクリックするとcontactに飛び、ナビゲーションが閉じる -->
+        <a
+          href="./service.html"
+          onclick="document.getElementById('nav-hum').style.display = 'none'"
+        >
+          Services</a
+        >
         <!-- contactをクリックするとcontactに飛び、ナビゲーションが閉じる -->
-        <a class="menu" href="./contact.html" onclick="document.getElementById('nav-hum').style.display = 'none'">
-        contact</a>
+        <a
+          href="./contact.html"
+          onclick="document.getElementById('nav-hum').style.display = 'none'"
+        >
+          Contact</a
+        >
+        <!-- faqをクリックするとcontactに飛び、ナビゲーションが閉じる -->
+        <a
+          href="./faq.html"
+          onclick="document.getElementById('nav-hum').style.display = 'none'"
+        >
+          FAQ</a
+        >
       </nav>
     </header>
 
-    <div>
-      <article id="aboutTop">
-        <h2 class="ttl">about</h2>
-        <article class="about">
-          <h3>kusano chika</h3>
-          <p>長崎県長崎市在住</p>
-          <h4>好きなもの・趣味</h4> 
-          <p>映画鑑賞、ジブリ、猫、犬<br>ラザニア、お酒、ピラティス</p>
-        </article>
-        <article class="about2">
-          <p id="aboutVisual">
-            <img id="aboutPc" src="./img/about-2.png" alt="プロフィール画像">
-            <img id="aboutSp" src="./img/about.jpg" alt="プロフィール画像">
-          </p>
-          <p id="pr">コーディング、バナー制作、<br>LP、HP制作のご依頼お待ちしております。<br>
-            javascript , PHP , css , html , Wordpress , photoshop
-          </p>
-        </article>
-      </article>
+    <!--------------------- main ----------------------->
+    <div id="main">
+      <!------------------------- line ----------------------->
+      <div id="line-wrap">
+        <div class="popup-line-message">
+          <img src="./img/line-message.png" />
+        </div>
+        <a id="line-img" href="">
+          <img src="./img/line-icon.png" />
+        </a>
+      </div>
     </div>
-          <!-- footer -->
-    <footer class="nav-pc">
-      <nav>
-        <ul>
-          <li>
-            <a href="./index.html#works">works</a>
-          </li>
-          <li>
-            <a href="./index.html#blog">blog</a>
-          </li>
-          <li>
-            <a href="./about.html">about</a>
-          </li>
-          <li>
-            <a href="./contact.html">contact</a>
-          </li>
-        </ul>
-      </nav>
+
+    <!-------------------------- about me ----------------------->
+    <article id="about">
+      <section id="about-pc">
+        <h1 class="ttl">わたしのこと</h1>
+        <div id="about-pc__txt">
+          <p id="about-pc__txt--name">chika</p>
+          <p class="about-pc__txt--bio">
+            こんにちは、chikaと申します。<br />
+            ふんわりとやさしい世界観と、使いやすさを両立したデザインを心がけています。<br />
+            眼科での勤務経験を活かし、視認性や情報の伝わりやすさにも配慮したサイト制作が得意です。
+            美容やライフスタイルに関わるWebサイトを中心に、女性目線で丁寧に仕上げています。
+          </p>
+          <p class="about-pc__txt--bio">
+            猫が大好きで、デザインにもほんの少し“癒し”のエッセンスを取り入れるのが好きです。<br />
+            あなたの「伝えたい」をカタチにするお手伝いができたら嬉しいです。
+          </p>
+        </div>
+        <div id="about-pc__img">
+          <img src="./img/about-pc.png" alt="プロフィール画像" />
+        </div>
+      </section>
+      <section id="about-sp">
+        <h1 class="ttl">わたしのこと</h1>
+        <div>
+          <p>名前</p>
+          <p>自己紹介文</p>
+        </div>
+        <div id="about-sp__img">
+          <img src="./img/about-sp.jpg" alt="プロフィール画像" />
+        </div>
+      </section>
+    </article>
+
+    <!--------------------------- footer -------------------->
+    <footer>
+      <!-- pc用ナビゲーション -->
+      <div id="footer-content_wrap">
+        <div id="footer-icon-wrap">
+          <div class="footer-logo">
+            <a id="footer-logo_txt" href="index.html"> Studio Chika </a>
+            <p>
+              <a href="">
+                <img src="./img/StudioChika.png" />
+              </a>
+            </p>
+          </div>
+          <div id="footer-icon-instagram">
+            <a href="">
+              Instagram
+              <div>
+                <img
+                  src="./img/portoforio-instagram.png"
+                  alt="Instagramのアイコン画像"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+        <nav id="footer-nav_pc">
+          <ul>
+            <li>
+              <a href="./Works.html"> Works </a>
+            </li>
+            <li>
+              <a href="./blog-archive.html"> Blog </a>
+            </li>
+            <li>
+              <a href="./contact.html"> Contact </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <p id="copy">&copy; Studio Chika 2025</p>
     </footer>
+    <script src="./script.js"></script>
   </body>
-  </head>
 </html>

@@ -8,6 +8,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scale=no"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/blog.css" />
     <!-- <link rel="stylesheet" href="./css/respon.css" /> -->
     <title>.Studio Chika</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -144,14 +145,14 @@
         >
         <!-- blogをクリックするとabout.htmlに飛び、ナビゲーションが閉じる -->
         <a
-          href="./blog-archive.html"
+          href="./blog.html"
           onclick="document.getElementById('nav-hum').style.display = 'none'"
         >
           Blog</a
         >
         <!-- worksをクリックするとcontactに飛び、ナビゲーションが閉じる -->
         <a
-          href="./works-archive.html"
+          href="./works.html"
           onclick="document.getElementById('nav-hum').style.display = 'none'"
         >
           Works</a
@@ -193,27 +194,38 @@
       </div>
     </div>
 
-    <!-------------------------- faq ----------------------->
-    <article id="faq">
-      <h1 class="ttl">よくある質問</h1>
-      <section>
-        <div>あ</div>
-      </section>
-      <section>
-        <div>い</div>
-      </section>
-      <section>
-        <div>う</div>
-      </section>
-      <section>
-        <div>え</div>
-      </section>
-      <section>
-        <div>お</div>
-      </section>
-      <section>
-        <div>か</div>
-      </section>
+    <!--------------------------blog-archive---------------------->
+    <article id="blog">
+      <h2 class="ttl">ブログ</h2>
+      <div class="blog-txt_wrap">
+        <div class="blog-thumbnail">
+          <a href="./blog-single-page.html">
+            <img src="./img/blog_3.jpg" />
+          </a>
+        </div>
+        <div class="blog-content">
+          <p class="blog-date">2025/7/9</p>
+          <p class="blog-text">誕生日でした</p>
+          <p class="blog-readmore">
+            <a href="./blog-single-page.html" class="blog-next"> 続きを読む </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="blog-txt_wrap">
+        <div class="blog-thumbnail">
+          <a href="./blog-single-page.html">
+            <img src="./img/blog_3.jpg" />
+          </a>
+        </div>
+        <div class="blog-content">
+          <p class="blog-date">2025/7/2</p>
+          <p class="blog-text">ジブリ展に行ってきました</p>
+          <p class="blog-readmore">
+            <a href="./blog-single-page.html" class="blog-next"> 続きを読む </a>
+          </p>
+        </div>
+      </div>
     </article>
 
     <!--------------------------- footer -------------------->

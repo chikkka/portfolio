@@ -8,6 +8,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scale=no"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/works.css" />
     <!-- <link rel="stylesheet" href="./css/respon.css" /> -->
     <title>.Studio Chika</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -158,7 +159,7 @@
         >
         <!-- serviceをクリックするとcontactに飛び、ナビゲーションが閉じる -->
         <a
-          href="./service.html"
+          href="./index.html#service"
           onclick="document.getElementById('nav-hum').style.display = 'none'"
         >
           Services</a
@@ -193,27 +194,24 @@
       </div>
     </div>
 
-    <!-------------------------- faq ----------------------->
-    <article id="faq">
-      <h1 class="ttl">よくある質問</h1>
-      <section>
-        <div>あ</div>
-      </section>
-      <section>
-        <div>い</div>
-      </section>
-      <section>
-        <div>う</div>
-      </section>
-      <section>
-        <div>え</div>
-      </section>
-      <section>
-        <div>お</div>
-      </section>
-      <section>
-        <div>か</div>
-      </section>
+    <!--------------------------works-single---------------------->
+    <article id="works-single">
+      <h1 class="ttl">制作実績</h1>
+      <div class="pankuzu">
+        <a href="./works-archive.html">制作実績一覧 </a> >>> 制作ページ
+      </div>
+      <div id="works-single__contents">
+        <h2 id="works-single__ttl">制作物のタイトル</h2>
+        <p id="works-single__date">日付</p>
+        <p id="works-single__txt">制作内容</p>
+        <div id="works-single__thumbnail">
+          <!--------- worksサムネ ---------->
+          <img src="./img/about-sp.jpg" alt="worksのサムネイル" />
+        </div>
+      </div>
+      <p id="works-single__back">
+        <a href="./works-archive.html">works一覧に戻る</a>
+      </p>
     </article>
 
     <!--------------------------- footer -------------------->
