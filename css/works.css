@@ -1,0 +1,50 @@
+/* ----------------- works-single ----------------- */
+#works-single__contents {
+  width: 60%;
+  height: auto;
+  padding: 5% 0;
+  margin: 2% auto 0 auto;
+  text-align: center;
+}
+
+#works-single__ttl {
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+}
+
+#works-single__date {
+  width: 90%;
+  height: auto;
+  font-size: 0.8rem;
+  margin: 2% auto 0 auto;
+  text-align: right;
+}
+
+#works-single__txt {
+  width: 90%;
+  height: auto;
+  margin: 2% auto 0 auto;
+}
+
+#works-single__thumbnail {
+  width: 60%;
+  height: auto;
+  margin: 6% auto 0 auto;
+  border-radius: 2em;
+  overflow: hidden;
+}
+
+#works-single__thumbnail img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#works-single__back {
+  width: 60%;
+  height: auto;
+  margin: 8% auto 0 auto;
+  font-size: 0.88rem;
+  text-align: center;
+}

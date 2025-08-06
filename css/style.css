@@ -17,11 +17,13 @@ li {
 }
 
 /* ------------------------- 共通 ------------------------*/
+
 #works,
 #service,
-#blog {
-  padding-top: 10%;
-  padding-bottom: 10%;
+#blog,
+#about {
+  padding-top: 6%;
+  padding-bottom: 6%;
 }
 
 #html-window,
@@ -51,6 +53,17 @@ li,
 a {
   color: #392a15;
   text-decoration: none;
+}
+
+.pankuzu,
+.pankuzu a {
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  font-size: 0.8rem;
+  font-weight: 800;
+  text-align: center;
+  color: #52847d;
 }
 
 /* ================ header =====================*/
@@ -88,7 +101,6 @@ header {
   position: relative;
   width: 100%;
   height: auto;
-  /* background-color: #8d7b63; */
 }
 
 #header-logo-img {
@@ -110,14 +122,14 @@ header {
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  opacity: 0;
   /* 表示される時に位置↓ */
   transform: translateX(10%) translateY(10%);
   /* opactyとtransformの変化を○秒間でスムーズに動かす↓*/
-  transition: opacity 2s ease;
 }
 
 #bear-talk img {
-  display: block;
+  display: none;
   width: 100%;
   height: auto;
 }
@@ -125,7 +137,7 @@ header {
 #header-logo-img_wrap:hover #bear-talk {
   position: absolute;
   opacity: 1;
-  transition: all 1.2s ease;
+  transition: opacity 1.2s ease;
   z-index: 9999;
 }
 
@@ -364,6 +376,7 @@ header {
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  font-size: 1.2rem;
   text-align: center;
 }
 
@@ -405,6 +418,70 @@ header {
   display: block;
   width: 100%;
   height: auto;
+}
+
+/* ------------- ハート -----------------*/
+/* ▼ 必須：最初に追加 */
+.like-container {
+  position: relative;
+  display: flex;
+  width: 30%;
+  height: auto;
+  align-items: center;
+  gap: 8px;
+  transform: translateX(260%);
+}
+
+.heart {
+  width: 20px;
+  height: 20px;
+  background-color: #ccc;
+  mask: url("https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/heart-fill.svg")
+    no-repeat center;
+  -webkit-mask: url("https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/heart-fill.svg")
+    no-repeat center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  transition: background-color 0.3s, transform 0.1s;
+  cursor: pointer;
+}
+
+.heart.liked {
+  background-color: #d7776e;
+  transform: scale(1.2);
+}
+
+.count {
+  font-weight: bold;
+  font-size: 14px;
+  color: #d36156;
+}
+
+/* ▼ ハートのエフェクト */
+.heart-effect {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  background-color: #e97d73;
+  mask: url("https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/heart-fill.svg")
+    no-repeat center;
+  -webkit-mask: url("https://cdn.jsdelivr.net/npm/bootstrap-icons/icons/heart-fill.svg")
+    no-repeat center;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  animation: float 0.8s ease-out forwards;
+  opacity: 0.8;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(var(--x), var(--y)) scale(0.5);
+    opacity: 0;
+  }
 }
 
 /* -------------------------Service ------------------ */
@@ -481,7 +558,7 @@ header {
 }
 
 #service-popup {
-  display: block;
+  /* display: block; */
   position: fixed;
   top: 20%;
   left: 50%;
@@ -503,6 +580,7 @@ header {
   background-color: #f5d4cd;
   border: solid 2px #f0b5b0;
   border-radius: 1em;
+  transition: teransform 0.3s ease;
 }
 
 #service-popup.service-hidden,
@@ -541,8 +619,9 @@ header {
   width: 80%;
   height: auto;
   margin: 8% auto 0 auto;
+  font-size: 0.88rem;
   text-align: left;
-  line-height: 1.6;
+  line-height: 1.8rem;
 }
 
 /* ------------------------- blog -------------------- */
@@ -629,7 +708,7 @@ header {
   font-size: 0.8rem;
   text-align: center;
   border-radius: 1em;
-  background-color: #f0b5b0;
+  background-color: #f5d4cd;
 }
 
 #blog-back-number {
@@ -649,7 +728,7 @@ header {
   margin-left: auto;
   margin-right: auto;
   border-radius: 1em;
-  background-color: #f0b5b0;
+  background-color: #f5d4cd;
 }
 
 /* ================ footer =====================*/

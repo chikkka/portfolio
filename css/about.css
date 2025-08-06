@@ -1,51 +1,53 @@
-div{
-  width: 100%;
-}
-
-article{
-  width: 100%;
-}
-
-.about, .about2{
-  width: 100%;
-  min-width: 300px;
-  text-align: center;
-}
-
-.about h3{
-  font-size: 0.8rem;
-  margin: 0;
-}
-
-.about p{
-  font-size: 0.5rem;
-  margin: 0 0 50px 0;
-}
-
-.about h4{
-  font-size: 0.7rem;
-  background-color: #faebd7;
-  margin: 0;
-}
-
-#aboutVisual{
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-#aboutSp{
-  width: 8rem;
+#about-pc {
+  display: block;
+  width: 80%;
   height: auto;
-  border-radius: 50%;
+  margin: -4% auto;
+  padding: 4% 0;
 }
 
-#aboutPc{
-  display: none;
+#about-pc__img {
+  width: 60%;
+  height: auto;
+  margin: 10% auto 0 auto;
+  border-radius: 2em;
+  overflow: hidden;
 }
 
-#pr{
-  font-size: 0.6rem;
+#about-pc__img img {
   width: 100%;
+  height: auto;
+}
+
+#about-pc__txt {
+  width: 100%;
+  height: auto;
+  margin: 4% auto 0 auto;
+  padding: 1% 0;
+  /* background-color: antiquewhite; */
+}
+
+#about-pc__txt--name {
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 2rem;
   text-align: center;
+  /* background-color: blueviolet; */
+}
+
+.about-pc__txt--bio {
+  width: 80%;
+  height: auto;
+  margin: 4% auto 0 auto;
+  font-size: 0.84rem;
+  text-align: left;
+  line-height: 2rem;
+}
+
+#about-sp {
+  display: none;
+  width: 80%;
+  height: auto;
 }

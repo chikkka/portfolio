@@ -1,0 +1,53 @@
+/* ----------------- blog-single ----------------- */
+#blog-single__contents {
+  width: 60%;
+  height: auto;
+  padding: 5% 0;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  /* background-color: aliceblue; */
+}
+
+#blog-single__ttl {
+  width: 100%;
+  height: auto;
+  font-size: 1rem;
+}
+
+#blog-single__date {
+  width: 90%;
+  height: auto;
+  font-size: 0.8rem;
+  margin: 2% auto 0 auto;
+  text-align: right;
+}
+
+#blog-single__txt {
+  width: 90%;
+  height: auto;
+  margin: 2% auto 0 auto;
+  font-size: 0.88rem;
+}
+
+#blog-single__thumbnail {
+  width: 60%;
+  height: auto;
+  margin: 6% auto 0 auto;
+
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+#blog-single__thumbnail img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+#blog-single__back {
+  width: 60%;
+  height: auto;
+  margin: 8% auto 0 auto;
+  font-size: 0.88rem;
+  text-align: center;
+}
