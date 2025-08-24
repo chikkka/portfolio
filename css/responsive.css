@@ -134,6 +134,8 @@
   }
 
   #service li {
+    width: 20%;
+    height: auto;
     background-color: blanchedalmond;
   }
 
