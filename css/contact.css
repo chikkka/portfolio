@@ -1,0 +1,118 @@
+#contact-wrap {
+  width: 80%;
+  height: auto;
+  margin: 4% auto 0 auto;
+  padding: 4% 0;
+  /* background-color: #e9f3eb; */
+}
+
+#contact-wrap > div {
+  width: 80%;
+  height: auto;
+  margin-top: 6%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.88rem;
+  text-align: center;
+  /* background-color: bisque; */
+}
+
+/* ---------------- ラベル ------------------ */
+#contact-name,
+#contact-phone,
+#contact-email {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: blueviolet; */
+}
+
+#contact-name__name,
+#contact-phone__phone,
+#contact-email__email,
+#other-contact__contanct {
+  font-size: 1rem;
+}
+
+/* ---------------  インプット --------------- */
+#name,
+#phone,
+#email {
+  display: block;
+  width: 40%;
+  height: auto;
+  margin-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2% 8%;
+  border-width: 2px;
+  border-radius: 2em;
+  background-color: #e9f3eb;
+  cursor: pointer;
+}
+
+/* -------------------- 必須 -------------------- */
+.required {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 1.6rem;
+  margin-left: 2%;
+  font-size: 0.8rem;
+  background-color: #f0b5b0;
+  border-radius: 2em;
+}
+
+/* ---------------メッセージ ---------------- */
+
+#other-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#message {
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: 2% auto 0 auto;
+  padding: 4%;
+  border-width: 2px;
+  border-radius: 2em;
+  background-color: #e9f3eb;
+  cursor: pointer;
+}
+
+/* ------------- 送信 -------------- */
+
+#send-button {
+  display: block;
+  width: 3.6rem;
+  height: 3.6rem;
+  padding: 2%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  border-radius: 50%;
+  background-color: #3c4a49;
+  transform: rotate(0deg);
+  transition: transform 0.8s ease;
+}
+
+#send-button svg {
+  width: 100%;
+  height: auto;
+  fill: #fef9f3;
+}
+
+#send-button:hover {
+  transform: rotate(45deg) scale(1.2);
+  transition: transform 0.4s ease;
+}

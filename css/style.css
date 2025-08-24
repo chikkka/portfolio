@@ -8,6 +8,8 @@ body {
   background-color: #fef9f3;
 }
 
+/* ------------------------- 共通 ------------------------*/
+
 /*　リセット */
 body,
 ul,
@@ -16,12 +18,12 @@ li {
   padding: 0;
 }
 
-/* ------------------------- 共通 ------------------------*/
-
 #works,
 #service,
 #blog,
-#about {
+#about,
+#contact,
+#faq {
   padding-top: 6%;
   padding-bottom: 6%;
 }
@@ -55,6 +57,24 @@ a {
   text-decoration: none;
 }
 
+button {
+  cursor: pointer;
+}
+
+.ttl,
+.top-ttl {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.top-ttl {
+  margin-top: 6%;
+}
+
 .pankuzu,
 .pankuzu a {
   width: 60%;
@@ -73,9 +93,10 @@ header {
   width: 100%;
   height: auto;
   z-index: 99999;
+  background-color: #fef9f3;
 }
 
-#header-pc {
+#header-wrap {
   display: flex;
   align-items: center;
   width: 90%;
@@ -126,6 +147,7 @@ header {
   /* 表示される時に位置↓ */
   transform: translateX(10%) translateY(10%);
   /* opactyとtransformの変化を○秒間でスムーズに動かす↓*/
+  transition: opacity 0.3s ease;
 }
 
 #bear-talk img {
@@ -213,61 +235,91 @@ header {
   text-align: center;
 }
 
-#icon-instagram a {
+.icon-instagram__txt {
   width: 100%;
   height: auto;
+  font-size: 0.88rem;
 }
 
-#icon-instagram_img {
-  width: 20%;
+.icon-instagram__img {
+  width: 16%;
   height: auto;
-  margin: 5% auto 0 auto;
+  margin: 4% auto 0 auto;
 }
 
-#icon-instagram_img img {
+.icon-instagram__img svg {
   width: 100%;
   height: auto;
 }
 
 /* -----ハンバーガーメニューのナビゲーション、レイアウトと非表示設定 ------*/
-#nav-hum {
+
+#nav-sp-open-btn {
+  position: fixed;
+  right: 2%;
+  top: 2%;
+  display: none;
+  width: 120px;
+  height: 40px;
+  background-color: #f0b5b0;
+  border-color: #f0b5b0;
+  border-radius: 2em;
+  text-decoration: none;
+  z-index: 99999;
+}
+
+#nav-sp {
   /* 基本はナビゲーションは閉じておくようにする */
   display: none;
-  position: fixed;
-  right: 4%;
-  width: 50%;
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  left: 52%;
+  width: 46%;
   height: auto;
-  padding-top: 5%;
-  padding-bottom: 5%;
-  margin-left: auto;
-  margin-right: auto;
+  padding-top: 10%;
+  padding-bottom: 8%;
+  margin: 2% auto 0 auto;
   font-size: 1.2rem;
   background-color: #faebd7;
   border-radius: 2em;
 }
 
-#nav-hum a {
+#nav-sp-close-btn {
+  position: fixed;
+  right: 2%;
+  top: 2%;
+  display: none;
+  width: 120px;
+  height: 40px;
+  background-color: #f0b5b0;
+  border-color: #f0b5b0;
+  border-radius: 2em;
+  text-decoration: none;
+  /* z-index: 99999; */
+}
+
+#nav-sp a {
   display: block;
   width: 40%;
   height: auto;
   padding-left: 2%;
   margin: 5% auto 0 auto;
   text-align: left;
-  background-color: #f5deb3;
 }
 
 /* 未訪問のリンクにスタイルを適用する。擬似クラス */
-#nav-hum a:link {
+#nav-sp a:link {
   color: #4d320f;
 }
 
 /* リンク訪問済みの場合にスタイルを適用する。 */
-#nav-hum a:visited {
+#nav-sp a:visited {
   color: #4d320f;
 }
 
 /* カーソルが乗っている時にスタイルを適用する */
-#nav-hum a:hover {
+#nav-sp a:hover {
   color: #ffffff;
 }
 
@@ -369,15 +421,6 @@ header {
 #line-wrap:hover .popup-line-message {
   opacity: 1;
   transform: translate(0, -120%) scale(1);
-}
-
-.ttl {
-  width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1.2rem;
-  text-align: center;
 }
 
 /* ------------------------- works ---------------------- */
@@ -565,7 +608,7 @@ header {
   transform: translateX(-50%);
   width: 80%;
   height: auto;
-  z-index: 9999;
+  z-index: 99999;
 }
 
 #service-popup__html,
@@ -580,7 +623,7 @@ header {
   background-color: #f5d4cd;
   border: solid 2px #f0b5b0;
   border-radius: 1em;
-  transition: teransform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 #service-popup.service-hidden,
@@ -602,24 +645,27 @@ header {
 .close-btn__daiko,
 .close-btn__wp,
 .close-btn__design {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 16%;
-  height: 8%;
+  width: 6%;
+  height: auto;
   margin: 8% auto 0 auto;
-  font-size: 0.8rem;
   text-align: center;
-  border-radius: 1em;
   cursor: pointer;
-  background-color: #f0b5b0;
+  /* background-color: #bcb0a1; */
+}
+
+.close-btn__html:hover,
+.close-btn__daiko:hover,
+.close-btn__wp:hover,
+.close-btn__design:hover {
+  transform: scale(1.24);
+  transition: transform 0.3s ease;
 }
 
 .service-popup__txt {
   width: 80%;
   height: auto;
   margin: 8% auto 0 auto;
-  font-size: 0.88rem;
+  font-size: 1rem;
   text-align: left;
   line-height: 1.8rem;
 }
@@ -630,29 +676,14 @@ header {
   width: 100%;
   height: auto;
 }
-.blog-label_new {
-  position: absolute;
-  top: 20%;
-  right: 10%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 3.2rem;
-  height: 3.2rem;
-  color: #e9f3eb;
-  font-size: 1rem;
-  text-align: center;
-  background-color: #53847d;
-  border-radius: 50%;
-}
 
 .blog-txt_wrap {
   display: flex;
   align-items: center;
-  width: 80%;
+  width: 60%;
   height: auto;
   padding: 3%;
-  margin: 10% auto 0 auto;
+  margin: 6% auto 0 auto;
   border: solid 3.2px #f0b5b0;
   border-radius: 2em;
 }
@@ -678,57 +709,41 @@ header {
 }
 
 .blog-date {
-  width: 90%;
+  width: 80%;
   height: auto;
-  font-size: 0.8rem;
+  font-size: 0.88rem;
   text-align: left;
 }
 
 .blog-text {
-  width: 100%;
+  width: 80%;
   text-align: left;
-  padding-left: 10%;
+  font-size: 1rem;
 }
 
 .blog-readmore {
-  position: relative;
-  width: 90%;
-  height: auto;
-  font-size: 0.8rem;
-  text-align: right;
-}
-
-.blog-readmore a {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  display: block;
-  width: 20%;
-  height: auto;
-  font-size: 0.8rem;
-  text-align: center;
-  border-radius: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 6rem;
+  height: 2rem;
+  font-size: 0.88rem;
   background-color: #f5d4cd;
+  border-radius: 2em;
+  transform: translate(280px);
 }
 
 #blog-back-number {
-  width: 60%;
-  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12rem;
+  height: 4rem;
   margin: 5% auto 0 auto;
-  font-size: 0.8rem;
+  font-size: 0.88rem;
   text-align: center;
-}
-
-#past-posts {
-  display: block;
-  width: 32%;
-  height: auto;
-  font-size: 0.8rem;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 1em;
   background-color: #f5d4cd;
+  border-radius: 2em;
 }
 
 /* ================ footer =====================*/
@@ -778,26 +793,34 @@ footer {
   height: auto;
 }
 
-#footer-icon-instagram {
+#icon-instagram__footer {
   width: 50%;
   margin: 10% auto 0 auto;
   font-size: 0.8rem;
   text-align: center;
+  /* background-color: #f0b5b0; */
 }
 
-#footer-icon-instagram a {
-  width: 100%;
-  height: auto;
-}
-
-#footer-icon-instagram div {
-  width: 20%;
+.icon-instagram__footer--txt {
+  width: 80%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  font-size: 0.88rem;
+  text-align: center;
+  /* background-color: #d7776e; */
 }
 
-#footer-icon-instagram img {
+.icon-instagram__footer--img {
+  width: 16%;
+  height: auto;
+  margin-top: 6%;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: #f5deb3; */
+}
+
+.icon-instagram__footer--img svg {
   width: 100%;
   height: auto;
 }

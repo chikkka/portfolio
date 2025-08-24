@@ -1,0 +1,204 @@
+/* --------------------------------------------------------- */
+/* -----大きいPC幅向け---画面幅が1200pxを上回った時に適用される----- */
+@media screen and (min-width: 1200px) {
+  /* ------------------------- index.html -------------- */
+  header,
+  main,
+  footer {
+    max-width: 1200px;
+    margin: 2% auto;
+  }
+
+  #service-popup {
+    max-width: 1400px;
+  }
+}
+
+/* ---------------------------------------------------------- */
+/* -----タブレット向け---画面幅が1023pxを下回った時に適用される----- */
+@media screen and (max-width: 1023px) {
+  /* ---------- index.html ------------ */
+  /* ----- → header ----- */
+  #nav-pc {
+    display: none;
+  }
+
+  #nav-sp-open-btn {
+    display: block;
+  }
+
+  #nav-sp {
+    display: block;
+  }
+
+  #nav-sp-close-btn {
+    display: block;
+  }
+
+  /* -----　→ blog ------ */
+  .blog-readmore {
+    transform: translate(180px);
+  }
+}
+
+/* ------------------------------------------------- */
+/* -----スマホ向け---画面幅が767~416px時に適用される----- */
+@media screen and (max-width: 767px) {
+  #nav-sp-open-btn {
+    position: fixed;
+    right: 10%;
+    top: 1.6%;
+    width: 80px;
+    height: 32px;
+  }
+
+  #nav-sp {
+    /* 基本はナビゲーションは閉じておくようにする */
+    position: absolute;
+    top: 12%;
+    right: 0;
+    width: 40%;
+    height: auto;
+    padding-top: 12%;
+    padding-bottom: 10%;
+    margin: 0 auto 0 auto;
+  }
+
+  #nav-sp-close-btn {
+    position: fixed;
+    right: 10%;
+    top: 1.6%;
+    width: 80px;
+    height: 32px;
+  }
+
+  #nav-sp a {
+    display: block;
+    width: 40%;
+    height: auto;
+    padding-left: 2%;
+    margin: 5% auto 0 auto;
+    text-align: left;
+  }
+
+  /* ------ works ------- */
+  #works {
+    width: 100%;
+    height: auto;
+  }
+
+  #works ul {
+    display: block;
+    width: 80%;
+    height: auto;
+    /* background-color: #f0b5b0; */
+  }
+
+  #works li {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: antiquewhite; */
+  }
+
+  .works-thumbnail {
+    width: 60%;
+    height: auto;
+    margin: 24% auto 0 auto;
+  }
+
+  .works-date {
+    width: 60%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .works-head {
+    width: 60%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+
+  /* --------- service ---------- */
+  #service {
+    background-color: #f0b5b0;
+  }
+
+  #service ul {
+    justify-content: space-around;
+    background-color: aquamarine;
+  }
+
+  #service li {
+    background-color: blanchedalmond;
+  }
+
+  .service-thumbnail {
+    background-color: chocolate;
+  }
+
+  .service-thumbnail img {
+    background-color: darksalmon;
+  }
+}
+
+/* -----小型スマホ向け---画面幅が415pxを下回った時に適用される----- */
+@media screen and (max-width: 415px) {
+  #nav-sp-open-btn {
+    position: fixed;
+    right: 2%;
+    top: 2%;
+    /* display: none; */
+    width: 120px;
+    height: 40px;
+    background-color: #f0b5b0;
+    border-color: #f0b5b0;
+    border-radius: 2em;
+    text-decoration: none;
+    z-index: 99999;
+  }
+
+  #nav-sp {
+    /* 基本はナビゲーションは閉じておくようにする */
+    /* display: none; */
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    left: 52%;
+    width: 46%;
+    height: auto;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin: 2% auto 0 auto;
+    font-size: 1.2rem;
+    background-color: #faebd7;
+    border-radius: 2em;
+  }
+
+  #nav-sp-close-btn {
+    position: fixed;
+    right: 2%;
+    top: 2%;
+    /* display: none; */
+    width: 120px;
+    height: 40px;
+    background-color: #f0b5b0;
+    border-color: #f0b5b0;
+    border-radius: 2em;
+    text-decoration: none;
+    /* z-index: 99999; */
+  }
+
+  #nav-sp a {
+    display: block;
+    width: 40%;
+    height: auto;
+    padding-left: 2%;
+    margin: 5% auto 0 auto;
+    text-align: left;
+  }
+}
