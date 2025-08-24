@@ -124,27 +124,14 @@
   }
 
   /* --------- service ---------- */
-  #service {
-    background-color: #f0b5b0;
-  }
 
   #service ul {
     justify-content: space-around;
-    background-color: aquamarine;
   }
 
   #service li {
     width: 20%;
     height: auto;
-    background-color: blanchedalmond;
-  }
-
-  .service-thumbnail {
-    background-color: chocolate;
-  }
-
-  .service-thumbnail img {
-    background-color: darksalmon;
   }
 }
 
