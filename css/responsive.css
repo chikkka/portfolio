@@ -133,6 +133,14 @@
     width: 20%;
     height: auto;
   }
+
+  /* -----　→ blog ------ */
+  .blog-readmore {
+    transform: translate(80px);
+    width: 40%;
+    height: auto;
+    font-size: 0.8rem;
+  }
 }
 
 /* -----小型スマホ向け---画面幅が415pxを下回った時に適用される----- */
