@@ -28,19 +28,8 @@ li {
   padding-bottom: 6%;
 }
 
-#html-window,
-#design-window,
-#operation-window,
-#wp-window {
-  /* display: none; */
-  width: 60%;
-  height: 30rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 a:hover:not(#line-content-wrap a, #header-logo-img, #line-img) {
-  /* カーソルが乗っている時に透明に近くなる */
+  /* lineアイコン以外にカーソルが乗っている時に透明に近くなる */
   opacity: 0.3;
   cursor: pointer;
 }
@@ -79,7 +68,6 @@ button {
 .pankuzu a {
   width: 60%;
   height: auto;
-  margin: 0 auto;
   font-size: 0.8rem;
   font-weight: 800;
   text-align: center;
@@ -102,7 +90,6 @@ header {
   width: 90%;
   height: 10rem;
   margin-left: auto;
-  margin-right: auto;
 }
 
 #header-logo {
@@ -115,7 +102,9 @@ header {
   width: 100%;
   height: auto;
   font-size: 0.8rem;
+  letter-spacing: 1.2px;
   text-align: center;
+  font-weight: bold;
 }
 
 #header-logo-img_wrap {
@@ -164,17 +153,7 @@ header {
 }
 
 #nav-pc {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: auto;
-}
-
-#nav-pc ul {
-  display: flex;
-  align-items: center;
-  width: 94%;
-  height: auto;
+  display: none;
 }
 
 #nav-pc li {
@@ -188,6 +167,7 @@ header {
   color: #392a15;
   border: solid 2px #f5d4cd;
   background-color: #fef9f3;
+
   border-radius: 1em;
 }
 
@@ -253,50 +233,57 @@ header {
 }
 
 /* -----ハンバーガーメニューのナビゲーション、レイアウトと非表示設定 ------*/
-
-#nav-sp-open-btn {
+.nav-toggle {
   position: fixed;
   right: 2%;
-  top: 2%;
-  display: none;
+  top: 4%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 120px;
   height: 40px;
+  padding: 8px 12px;
   background-color: #f0b5b0;
   border-color: #f0b5b0;
-  border-radius: 2em;
-  text-decoration: none;
+  border-radius: 1em;
+  letter-spacing: 1.2px;
+  font-weight: bold;
   z-index: 99999;
 }
 
-#nav-sp {
-  /* 基本はナビゲーションは閉じておくようにする */
-  display: none;
-  position: absolute;
-  top: 2%;
-  right: 2%;
-  left: 52%;
-  width: 46%;
-  height: auto;
-  padding-top: 10%;
-  padding-bottom: 8%;
+.nav-drawer {
+  position: fixed;
+  inset: 0 0 0 auto; /* 右から出す */
+  width: min(85vw, 320px);
+  max-width: 320px;
+  padding: 72px 20px 20px;
   margin: 2% auto 0 auto;
-  font-size: 1.2rem;
   background-color: #faebd7;
-  border-radius: 2em;
+  border-radius: 1em;
+  font-size: 1.2rem;
+  letter-spacing: 1.2px;
+  font-weight: bold;
+  transform: translateX(100%); /* 初期はオフスクリーン */
+  transition: transform 0.25s ease;
+  box-shadow: -8px 0 24px rgba(0, 0, 0, 0.15);
+  z-index: 99999;
+}
+
+#nav-sp.open {
+  transform: translateX(0);
 }
 
 #nav-sp-close-btn {
-  position: fixed;
+  position: absolute;
   right: 2%;
-  top: 2%;
-  display: none;
+  top: 2.8%;
   width: 120px;
   height: 40px;
   background-color: #f0b5b0;
   border-color: #f0b5b0;
-  border-radius: 2em;
-  text-decoration: none;
-  /* z-index: 99999; */
+  border-radius: 1em;
+  letter-spacing: 1.2px;
+  font-weight: bold;
 }
 
 #nav-sp a {
@@ -430,23 +417,23 @@ header {
 }
 
 #works ul {
-  display: flex;
-  justify-content: center;
+  display: block;
   width: 80%;
   height: auto;
   margin: 10% auto 0 auto;
 }
 
 #works li {
-  width: 25%;
+  width: 80%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
 }
 
 .works-thumbnail {
-  width: 100%;
+  width: 60%;
   height: auto;
+  margin: 24% auto 0 auto;
   border: solid 3.2px #faebd7;
   border-radius: 1em;
   overflow: hidden;
@@ -461,6 +448,21 @@ header {
   display: block;
   width: 100%;
   height: auto;
+}
+
+.works-date {
+  width: 60%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.works-head {
+  width: 60%;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
 /* ------------- ハート -----------------*/
@@ -536,14 +538,14 @@ header {
 
 #service ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   width: 80%;
   height: auto;
   margin: 10% auto 0 auto;
 }
 
 #service li {
-  width: 18%;
+  width: 20%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -725,12 +727,12 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 6rem;
-  height: 2rem;
-  font-size: 0.88rem;
+  width: 24%;
+  height: auto;
+  font-size: 0.8rem;
   background-color: #f5d4cd;
-  border-radius: 2em;
-  transform: translate(280px);
+  border-radius: 1em;
+  transform: translate(120px);
 }
 
 #blog-back-number {
