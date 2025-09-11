@@ -1,22 +1,4 @@
-// document.addEventListener("DOMContentLoaded", function () {
-//   const logoImg = document.querySelector("#header-logo-img img");
-//   const bearTalkImgs = document.querySelectorAll("#bear-talk img");
-
-//   logoImg.addEventListener("mouseenter", function () {
-// すべて非表示に
-// bearTalkImgs.forEach((img) => (img.style.display = "none"));
-
-// ランダムに1つ選んで表示
-//   const randomIndex = Math.floor(Math.random() * bearTalkImgs.length);
-//   bearTalkImgs[randomIndex].style.display = "block";
-// });
-
-// logoImg.addEventListener("mouseleave", function () {
-// ホバー外れたら全部非表示に
-//     bearTalkImgs.forEach((img) => (img.style.display = "none"));
-//   });
-// });
-
+//--------------------------- クマのトーク ------------------------------
 document.addEventListener("DOMContentLoaded", function () {
   const logoImg = document.querySelector("#header-logo-img img");
   const bearTalk = document.getElementById("bear-talk");
@@ -51,6 +33,26 @@ document.addEventListener("DOMContentLoaded", function () {
   // クリック対応
   logoImg.addEventListener("click", showRandomBear);
 });
+
+// ------------------ ハンバーガーメニュー ------------------------
+const openBtn = document.getElementById("nav-sp-open-btn");
+const closeBtn = document.getElementById("nav-sp-close-btn");
+const drawer = document.getElementById("nav-sp");
+
+function openNav() {
+  drawer.classList.toggle("open");
+}
+function closeNav() {
+  drawer.classList.remove("open");
+}
+
+openBtn.addEventListener("click", openNav);
+closeBtn.addEventListener("click", closeNav);
+
+// メニュー内リンクを押したら閉じる
+drawer
+  .querySelectorAll("a")
+  .forEach((a) => a.addEventListener("click", closeNav));
 
 // --------------------- blog ---------------------------------
 

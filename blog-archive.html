@@ -5,7 +5,7 @@
     <meta name="description" content="私のポートフォリオ" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scale=no"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/blog.css" />
@@ -31,7 +31,7 @@
   <body>
     <!-------------------- header -------------------->
     <header>
-      <div id="header-pc">
+      <div id="header-wrap">
         <h1 id="header-logo">
           <a id="header-logo-txt" href="index.html">Studio Chika</a>
           <div id="header-logo-img_wrap">
@@ -139,61 +139,98 @@
             </a>
           </div>
         </nav>
+        <!----------- ハンバーガーナビ -------------->
+        <button
+          id="nav-sp-open-btn"
+          class="nav-toggle"
+          type="button"
+          aria-controls="nav-sp"
+          aria-expanded="false"
+          aria-label="メニューを開く"
+        >
+          MENU
+        </button>
+        <nav
+          id="nav-sp"
+          class="nav-drawer"
+          data-visible="false"
+          aria-hidden="true"
+        >
+          <button
+            id="nav-sp-close-btn"
+            type="button"
+            aria-label="メニューを閉じる"
+          >
+            CLOSE
+          </button>
+          <ul>
+            <li>
+              <!-- Homeをクリックするとhomeに飛び、ナビゲーションが閉じる -->
+              <a
+                href="./index.html"
+                onclick="document.getElementById('nav-hum').style.display = 'none'"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <!-- Aboutmeをクリックするとabout.htmlに飛び、ナビゲーションが閉じる -->
+              <a
+                href="./about.html"
+                onclick="document.getElementById('nav-hum').style.display = 'none'"
+              >
+                About me</a
+              >
+            </li>
+            <li>
+              <!-- blogをクリックするとblog-archive.htmlに飛び、ナビゲーションが閉じる -->
+              <a
+                href="./blog-archive.html"
+                onclick="document.getElementById('nav-hum').style.display = 'none'"
+              >
+                Blog
+              </a>
+            </li>
+            <li>
+              <!-- worksをクリックするとworks-archive.htmlに飛び、ナビゲーションが閉じる -->
+              <a
+                href="./works-archive.html"
+                onclick="document.getElementById('nav-hum').style.display = 'none'"
+              >
+                Works
+              </a>
+            </li>
+            <li>
+              <!-- serviceをクリックするとhomeの#serviceに飛び、ナビゲーションが閉じる -->
+              <a
+                href="./index.html#service"
+                onclick="document.getElementById('nav-hum').style.display = 'none'"
+              >
+                Services
+              </a>
+            </li>
+            <li>
+              <!-- contactをクリックするとcontactに飛び、ナビゲーションが閉じる -->
+              <a
+                href="./contact.html"
+                onclick="document.getElementById('nav-hum').style.display = 'none'"
+              >
+                Contact
+              </a>
+            </li>
+            <li>
+              <!-- faqをクリックするとcontactに飛び、ナビゲーションが閉じる -->
+              <a
+                href="./faq.html"
+                onclick="document.getElementById('nav-hum').style.display = 'none'"
+              >
+                FAQ
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <!----------- ハンバーガーナビ -------------->
-      <nav id="nav-hum">
-        <!-- Homeをクリックするとworksに飛び、ナビゲーションが閉じる -->
-        <a
-          href="./index.html"
-          onclick="document.getElementById('nav-hum').style.display = 'none'"
-        >
-          Home</a
-        >
-        <!-- Aboutmeをクリックするとblogに飛び、ナビゲーションが閉じる -->
-        <a
-          href="./about.html"
-          onclick="document.getElementById('nav-hum').style.display = 'none'"
-        >
-          About me</a
-        >
-        <!-- blogをクリックするとabout.htmlに飛び、ナビゲーションが閉じる -->
-        <a
-          href="./blog.html"
-          onclick="document.getElementById('nav-hum').style.display = 'none'"
-        >
-          Blog</a
-        >
-        <!-- worksをクリックするとcontactに飛び、ナビゲーションが閉じる -->
-        <a
-          href="./works.html"
-          onclick="document.getElementById('nav-hum').style.display = 'none'"
-        >
-          Works</a
-        >
-        <!-- serviceをクリックするとcontactに飛び、ナビゲーションが閉じる -->
-        <a
-          href="./service.html"
-          onclick="document.getElementById('nav-hum').style.display = 'none'"
-        >
-          Services</a
-        >
-        <!-- contactをクリックするとcontactに飛び、ナビゲーションが閉じる -->
-        <a
-          href="./contact.html"
-          onclick="document.getElementById('nav-hum').style.display = 'none'"
-        >
-          Contact</a
-        >
-        <!-- faqをクリックするとcontactに飛び、ナビゲーションが閉じる -->
-        <a
-          href="./faq.html"
-          onclick="document.getElementById('nav-hum').style.display = 'none'"
-        >
-          FAQ</a
-        >
-      </nav>
     </header>
-
     <!--------------------- main ----------------------->
     <main id="main">
       <!------------------------- line ----------------------->
@@ -201,7 +238,7 @@
         <div class="popup-line-message">
           <img src="./img/line-message.png" />
         </div>
-        <a id="line-img" href="">
+        <a id="line-img" href="" target="_blank" rel="noopener noreferrer">
           <img src="./img/line-icon.png" />
         </a>
       </div>
@@ -211,7 +248,11 @@
         <h2 class="ttl">ブログ</h2>
         <div class="blog-txt_wrap">
           <div class="blog-thumbnail">
-            <a href="./blog-single-page.html">
+            <a
+              href="./blog-single-page.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="./img/blog_3.jpg" />
             </a>
           </div>
@@ -219,7 +260,12 @@
             <p class="blog-date">2025/7/9</p>
             <p class="blog-text">誕生日でした</p>
             <p class="blog-readmore">
-              <a href="./blog-single-page.html" class="blog-next">
+              <a
+                href="./blog-single-page.html"
+                class="blog-next"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 続きを読む
               </a>
             </p>
@@ -228,7 +274,11 @@
 
         <div class="blog-txt_wrap">
           <div class="blog-thumbnail">
-            <a href="./blog-single-page.html">
+            <a
+              href="./blog-single-page.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img src="./img/blog_3.jpg" />
             </a>
           </div>
@@ -236,7 +286,12 @@
             <p class="blog-date">2025/7/2</p>
             <p class="blog-text">ジブリ展に行ってきました</p>
             <p class="blog-readmore">
-              <a href="./blog-single-page.html" class="blog-next">
+              <a
+                href="./blog-single-page.html"
+                class="blog-next"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 続きを読む
               </a>
             </p>
@@ -284,13 +339,31 @@
         <nav id="footer-nav_pc">
           <ul>
             <li>
-              <a href="./works-archive.html"> Works </a>
+              <a
+                href="./works-archive.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Works
+              </a>
             </li>
             <li>
-              <a href="./blog-archive.html"> Blog </a>
+              <a
+                href="./blog-archive.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Blog
+              </a>
             </li>
             <li>
-              <a href="./contact.html"> Contact </a>
+              <a
+                href="./contact.html"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Contact
+              </a>
             </li>
           </ul>
         </nav>

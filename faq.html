@@ -5,7 +5,7 @@
     <meta name="description" content="私のポートフォリオ" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scale=no"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/faq.css" />
@@ -31,7 +31,7 @@
   <body>
     <!-------------------- header -------------------->
     <header>
-      <div id="header-pc">
+      <div id="header-wrap">
         <h1 id="header-logo">
           <a id="header-logo-txt" href="index.html">Studio Chika</a>
           <div id="header-logo-img_wrap">
@@ -139,59 +139,97 @@
             </a>
           </div>
         </nav>
+        <!----------- ハンバーガーナビ -------------->
+        <button
+          id="nav-sp-open-btn"
+          class="nav-toggle"
+          type="button"
+          aria-controls="nav-sp"
+          aria-expanded="false"
+          aria-label="メニューを開く"
+        >
+          MENU
+        </button>
+        <nav
+          id="nav-sp"
+          class="nav-drawer"
+          data-visible="false"
+          aria-hidden="true"
+        >
+          <button
+            id="nav-sp-close-btn"
+            type="button"
+            aria-label="メニューを閉じる"
+          >
+            CLOSE
+          </button>
+          <ul>
+            <li>
+              <!-- Homeをクリックするとhomeに飛び、ナビゲーションが閉じる -->
+              <a
+                href="./index.html"
+                onclick="document.getElementById('nav-hum').style.display = 'none'"
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <!-- Aboutmeをクリックするとabout.htmlに飛び、ナビゲーションが閉じる -->
+              <a
+                href="./about.html"
+                onclick="document.getElementById('nav-hum').style.display = 'none'"
+              >
+                About me</a
+              >
+            </li>
+            <li>
+              <!-- blogをクリックするとblog-archive.htmlに飛び、ナビゲーションが閉じる -->
+              <a
+                href="./blog-archive.html"
+                onclick="document.getElementById('nav-hum').style.display = 'none'"
+              >
+                Blog
+              </a>
+            </li>
+            <li>
+              <!-- worksをクリックするとworks-archive.htmlに飛び、ナビゲーションが閉じる -->
+              <a
+                href="./works-archive.html"
+                onclick="document.getElementById('nav-hum').style.display = 'none'"
+              >
+                Works
+              </a>
+            </li>
+            <li>
+              <!-- serviceをクリックするとhomeの#serviceに飛び、ナビゲーションが閉じる -->
+              <a
+                href="./index.html#service"
+                onclick="document.getElementById('nav-hum').style.display = 'none'"
+              >
+                Services
+              </a>
+            </li>
+            <li>
+              <!-- contactをクリックするとcontactに飛び、ナビゲーションが閉じる -->
+              <a
+                href="./contact.html"
+                onclick="document.getElementById('nav-hum').style.display = 'none'"
+              >
+                Contact
+              </a>
+            </li>
+            <li>
+              <!-- faqをクリックするとcontactに飛び、ナビゲーションが閉じる -->
+              <a
+                href="./faq.html"
+                onclick="document.getElementById('nav-hum').style.display = 'none'"
+              >
+                FAQ
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <!----------- ハンバーガーナビ -------------->
-      <nav id="nav-hum">
-        <!-- Homeをクリックするとworksに飛び、ナビゲーションが閉じる -->
-        <a
-          href="./index.html"
-          onclick="document.getElementById('nav-hum').style.display = 'none'"
-        >
-          Home</a
-        >
-        <!-- Aboutmeをクリックするとblogに飛び、ナビゲーションが閉じる -->
-        <a
-          href="./about.html"
-          onclick="document.getElementById('nav-hum').style.display = 'none'"
-        >
-          About me</a
-        >
-        <!-- blogをクリックするとabout.htmlに飛び、ナビゲーションが閉じる -->
-        <a
-          href="./blog-archive.html"
-          onclick="document.getElementById('nav-hum').style.display = 'none'"
-        >
-          Blog</a
-        >
-        <!-- worksをクリックするとcontactに飛び、ナビゲーションが閉じる -->
-        <a
-          href="./works-archive.html"
-          onclick="document.getElementById('nav-hum').style.display = 'none'"
-        >
-          Works</a
-        >
-        <!-- serviceをクリックするとcontactに飛び、ナビゲーションが閉じる -->
-        <a
-          href="./service.html"
-          onclick="document.getElementById('nav-hum').style.display = 'none'"
-        >
-          Services</a
-        >
-        <!-- contactをクリックするとcontactに飛び、ナビゲーションが閉じる -->
-        <a
-          href="./contact.html"
-          onclick="document.getElementById('nav-hum').style.display = 'none'"
-        >
-          Contact</a
-        >
-        <!-- faqをクリックするとcontactに飛び、ナビゲーションが閉じる -->
-        <a
-          href="./faq.html"
-          onclick="document.getElementById('nav-hum').style.display = 'none'"
-        >
-          FAQ</a
-        >
-      </nav>
     </header>
 
     <!--------------------- main ----------------------->
