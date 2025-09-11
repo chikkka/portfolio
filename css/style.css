@@ -134,14 +134,14 @@ header {
   margin-right: auto;
   opacity: 0;
   /* 表示される時に位置↓ */
-  transform: translateX(10%) translateY(10%);
+  transform: translateX(-40%) translateY(10%);
   /* opactyとtransformの変化を○秒間でスムーズに動かす↓*/
   transition: opacity 0.3s ease;
 }
 
 #bear-talk img {
   display: none;
-  width: 100%;
+  width: 200%;
   height: auto;
 }
 

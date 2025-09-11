@@ -1,5 +1,15 @@
 /* -----スマホ向け---画面幅が767px以上の時に適用される----- */
 @media screen and (min-width: 767px) {
+  /* ----- beartalk ----- */
+  #bear-talk {
+    /* 表示される時に位置↓ */
+    transform: translateX(10%) translateY(10%);
+  }
+
+  #bear-talk img {
+    width: 100%;
+    height: auto;
+  }
   /* ----- → header ----- */
   .nav-list {
     list-style: none;
