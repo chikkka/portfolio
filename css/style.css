@@ -86,15 +86,18 @@ header {
 
 #header-wrap {
   display: flex;
-  align-items: center;
-  width: 90%;
-  height: 10rem;
-  margin-left: auto;
+  /* align-items: center; */
+  width: 100%;
+  height: 6rem;
+  margin: 0 auto;
+  background-color: #e97d73;
 }
 
 #header-logo {
+  /* position: absolute; */
   width: 30%;
   height: auto;
+  background-color: #f0b5b0;
 }
 
 #header-logo-txt {
@@ -105,12 +108,14 @@ header {
   letter-spacing: 1.2px;
   text-align: center;
   font-weight: bold;
+  background-color: #faebd7;
 }
 
 #header-logo-img_wrap {
   position: relative;
   width: 100%;
   height: auto;
+  background-color: #b586bf;
 }
 
 #header-logo-img {
@@ -118,6 +123,7 @@ header {
   width: 30%;
   height: auto;
   margin: 3% auto 0 auto;
+  background-color: #9661a2;
 }
 
 #header-logo-img img {
@@ -128,20 +134,21 @@ header {
 
 #bear-talk {
   position: absolute;
-  width: 80%;
+  width: 100%;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   opacity: 0;
   /* 表示される時に位置↓ */
-  transform: translateX(-40%) translateY(10%);
+  transform: translateX(0%) translateY(10%);
   /* opactyとtransformの変化を○秒間でスムーズに動かす↓*/
   transition: opacity 0.3s ease;
+  background-color: rgb(127, 188, 208);
 }
 
 #bear-talk img {
   display: none;
-  width: 200%;
+  width: 100%;
   height: auto;
 }
 
@@ -232,7 +239,7 @@ header {
   height: auto;
 }
 
-/* -----ハンバーガーメニューのナビゲーション、レイアウトと非表示設定 ------*/
+/* -----ハンバーガーメニュー ------*/
 .nav-toggle {
   position: fixed;
   right: 2%;
@@ -240,7 +247,7 @@ header {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 120px;
+  width: 100px;
   height: 40px;
   padding: 8px 12px;
   background-color: #f0b5b0;
@@ -277,7 +284,7 @@ header {
   position: absolute;
   right: 2%;
   top: 2.8%;
-  width: 120px;
+  width: 100px;
   height: 40px;
   background-color: #f0b5b0;
   border-color: #f0b5b0;
@@ -312,32 +319,31 @@ header {
 
 /* =============== main ================== */
 #main {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+#main-visual {
   position: relative;
   width: 100%;
   height: auto;
 }
 
-#main-visual_pc {
-  position: relative;
+#main-visual img {
   width: 100%;
   height: auto;
 }
 
-#main-visual_pc img {
-  width: 100%;
-  height: auto;
-}
-
-#main-visual_pc p {
+#main-visual p {
   position: absolute;
-  top: 6%;
-  width: 30%;
+  top: 0%;
+  width: 24%;
   height: auto;
   writing-mode: vertical-rl;
   text-orientation: upright;
   line-height: 1.8;
-  text-align: right;
-  font-size: 2rem;
+  text-align: center;
   color: #faebd7;
 }
 
