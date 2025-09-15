@@ -6,6 +6,16 @@
   /* background-color: #e9f3eb; */
 }
 
+/* ------- 準備中 ------- */
+#setting {
+  width: 80%;
+  height: auto;
+  margin-top: 12%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
 #contact-wrap > div {
   width: 80%;
   height: auto;
