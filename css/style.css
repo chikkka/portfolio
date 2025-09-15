@@ -837,12 +837,14 @@ footer {
 #footer-content_wrap {
   display: flex;
   align-items: center;
+  /* background-color: chocolate; */
 }
 
 #footer-icon-wrap {
   width: 100%;
   height: auto;
   padding: 2% 0 0 2%;
+  /* background-color: #76716b; */
 }
 
 .footer-logo {
@@ -859,6 +861,7 @@ footer {
   display: block;
   width: 100%;
   height: auto;
+  /* background-color: darkslateblue; */
 }
 
 .footer-logo p {
@@ -866,6 +869,7 @@ footer {
   width: 30%;
   height: auto;
   margin: 0 auto 0 auto;
+  /* background-color: wheat; */
 }
 
 .footer-logo img {
@@ -888,6 +892,7 @@ footer {
   margin-right: auto;
   font-size: 0.88rem;
   text-align: center;
+  /* background-color: darkgreen; */
 }
 
 .icon-instagram__footer--img {
@@ -902,13 +907,13 @@ footer {
 }
 
 #footer-nav {
-  width: 80%;
+  width: 100%;
   height: auto;
   /* background-color: #e9f3eb; */
 }
 
 #footer-nav ul {
-  width: 80%;
+  width: 100%;
   height: auto;
   margin: 0 auto 20% auto;
   /* background-color: #d36156; */
