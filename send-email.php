@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         "お問合せ内容: {$messageText}";
 
     // ▼ 送信先
-    $to = "yamasu2751@gmail.com";
+    $to = "ch7.x.q0709@gmail.com";
     $subject = "お問い合わせフォームの送信";
 
     // ▼ Reply-To バリデーション（安全なメールのみ）
@@ -50,7 +50,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $fromName = mb_encode_mimeheader("ママのためのサロンやます");
 
     // ▼ ヘッダー設定
-    $headers  = "From: {$fromName} <no-reply  　　　　>\r\n";
+    $headers  = "From: {$fromName} <no-reply >\r\n";
     if ($safeEmail) {
         $headers .= "Reply-To: {$safeEmail}\r\n";
     }
