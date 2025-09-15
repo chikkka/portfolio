@@ -1,5 +1,12 @@
 /* -----タブレット向け---画面幅が550px以上の時に適用される----- */
 @media screen and (min-width: 550px) {
+  /* -------- heder -------------- */
+  #header-logo {
+    width: 24%;
+    height: auto;
+    /* background-color: #f0b5b0; */
+  }
+
   /* -------- main-visual ------- */
   #main-visual p {
     font-size: 1.6rem;
@@ -12,6 +19,11 @@
 /* -----タブレット向け---画面幅が767px以上の時に適用される----- */
 @media screen and (min-width: 767px) {
   /* ----- header -------- */
+  #header-logo {
+    width: 18%;
+    height: auto;
+    /* background-color: #f0b5b0; */
+  }
 
   /* ----- beartalk ----- */
   #bear-talk {
@@ -95,6 +107,13 @@
 */
 /* -----タブレット向け---画面幅が950px以上の時に適用される----- */
 @media screen and (min-width: 950px) {
+  /* ----- header -------- */
+  #header-logo {
+    width: 12%;
+    height: auto;
+    /* background-color: #f0b5b0; */
+  }
+
   /* ------- works -------- */
   #works-single__url {
     font-size: 0.99rem;
