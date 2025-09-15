@@ -64,6 +64,7 @@
   font-size: 0.88rem;
   /* background-color: hotpink; */
 }
+
 #works-single__charge {
   width: 100%;
   height: auto;
@@ -77,7 +78,7 @@
 #works-single__used {
   width: 100%;
   height: auto;
-  margin-top: 12%;
+  margin-top: 4%;
   font-size: 0.8rem;
   text-align: left;
   line-height: 1.6rem;
@@ -87,7 +88,7 @@
 #works-single__goal {
   width: 100%;
   height: auto;
-  margin-top: 12%;
+  margin-top: 4%;
   font-size: 0.8rem;
   text-align: left;
   line-height: 1.6rem;
@@ -97,7 +98,7 @@
 #works-single__design {
   width: 100%;
   height: auto;
-  margin-top: 12%;
+  margin-top: 4%;
   font-size: 0.8rem;
   text-align: left;
   line-height: 1.6rem;
@@ -107,7 +108,7 @@
 #works-single__summary {
   width: 100%;
   height: auto;
-  margin-top: 12%;
+  margin-top: 4%;
   font-size: 0.8rem;
   text-align: left;
   line-height: 1.6rem;

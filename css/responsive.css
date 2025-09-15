@@ -35,6 +35,10 @@
     justify-content: center;
   }
 
+  #works-back-number {
+    margin-top: 8%;
+  }
+
   /* ------ service ------- */
   #service ul {
     justify-content: center;
@@ -46,8 +50,93 @@
   }
 
   /* ------ blog ------ */
+  .blog-wrap {
+    padding: 8%;
+  }
+
+  .blog-date {
+    font-size: 0.99rem;
+  }
+
+  .thumbnail-txt_wrap {
+    margin-top: 4%;
+    /* background-color: #e97d73; */
+  }
+
+  .blog-thumbnail {
+    width: 88px;
+    height: 88px;
+    border: solid 3.2px #faebd7;
+    border-radius: 5em;
+    overflow: hidden;
+  }
+
+  .blog-text {
+    font-size: 1rem;
+  }
+
   .blog-readmore {
-    transform: translate(80px);
+    transform: translate(100px);
+  }
+
+  /* -------- footer ------- */
+  #footer-nav li {
+    font-size: 1.2rem;
+    /* background-color: #52847d; */
+  }
+}
+/* 
+
+
+
+
+
+
+*/
+/* -----タブレット向け---画面幅が950px以上の時に適用される----- */
+@media screen and (min-width: 950px) {
+  /* ------- works -------- */
+  #works-single__url {
+    font-size: 0.99rem;
+  }
+
+  #works-single__date {
+    font-size: 0.88rem;
+  }
+
+  #works-single__charge,
+  #works-single__used,
+  #works-single__goal,
+  #works-single__design,
+  #works-single__summary {
+    font-size: 1rem;
+  }
+
+  /* ------ blog ------ */
+  .blog-date {
+    font-size: 1.2rem;
+    /* background-color: #7a5e3a; */
+  }
+
+  .blog-thumbnail {
+    width: 120px;
+    height: 120px;
+  }
+
+  .blog-text {
+    font-size: 1.2rem;
+    /* background-color: aliceblue; */
+  }
+
+  .blog-readmore {
+    width: 80px;
+    height: 40px;
+    font-size: 1rem;
+    transform: translate(100px);
+  }
+
+  #blog-single__date {
+    font-size: 0.88rem;
   }
 }
 /* 
@@ -67,6 +156,11 @@
     padding-top: 6%;
     padding-bottom: 6%;
     /* background-color: aliceblue; */
+  }
+
+  #header-wrap {
+    display: flex;
+    align-items: center;
   }
 
   /* -------- main-visual ------- */
