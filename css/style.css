@@ -203,7 +203,7 @@ header {
 }
 
 #nav-pc li:hover .cat-popup {
-  top: -10px;
+  top: -36px;
   opacity: 1;
   transform: translateY(-20px) scale(1);
 }
