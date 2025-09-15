@@ -1,14 +1,14 @@
 .faq-content-ttl {
-  width: 40%;
+  width: 80%;
   height: auto;
   margin: 16% auto 0 auto;
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: center;
   /* background-color: #ed8177; */
 }
 
 .faq-content {
-  width: 60%;
+  width: 80%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -27,10 +27,11 @@
 .question-wrap {
   display: flex;
   align-items: flex-start;
-  width: 80%;
+  width: 100%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
+  font-size: 0.8rem;
   /* margin: 8% auto 0 auto; */
   /* background-color: beige; */
 }
@@ -48,17 +49,18 @@
 }
 
 .question-txt {
-  width: 60%;
+  width: 100%;
   height: auto;
   margin-top: 0;
   margin-left: 6%;
   font-weight: bold;
-  /* background-color: bisque; */
+  line-height: 1.6rem;
+  /* background-color: rgb(158, 133, 103); */
 }
 
 .answer-wrap {
   display: flex;
-  width: 80%;
+  width: 100%;
   height: auto;
   margin-top: 2.4%;
   margin-left: auto;
@@ -84,7 +86,9 @@
   height: auto;
   margin: 0;
   margin-left: 6%;
-  font-size: 0.88rem;
+  font-size: 0.8rem;
+  line-height: 1.6rem;
+  /* background-color: aqua; */
 }
 
 .faq-others {

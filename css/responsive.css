@@ -1,5 +1,18 @@
+/* -----タブレット向け---画面幅が550px以上の時に適用される----- */
+@media screen and (min-width: 550px) {
+  /* -------- main-visual ------- */
+  #main-visual p {
+    font-size: 1.6rem;
+  }
+}
+/* 
+
+
+
 /* -----タブレット向け---画面幅が767px以上の時に適用される----- */
 @media screen and (min-width: 767px) {
+  /* ----- header -------- */
+
   /* ----- beartalk ----- */
   #bear-talk {
     /* 表示される時に位置↓ */
@@ -10,14 +23,10 @@
     width: 100%;
     height: auto;
   }
-  /* ----- → header ----- */
-  .nav-list {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+
+  /* -------- main-visual ------- */
+  #main-visual p {
+    font-size: 2.4rem;
   }
 
   /* ------- works ------- */
@@ -36,23 +45,29 @@
     height: auto;
   }
 
-  /* -----　→ blog ------ */
+  /* ------ blog ------ */
   .blog-readmore {
-    width: 6rem;
-    height: 2rem;
-    font-size: 0.88rem;
-    transform: translate(180px);
+    transform: translate(80px);
   }
 }
+/* 
 
+
+
+
+*/
 /* -----大きいPC幅向け---画面幅が1200px以上の時に適用される----- */
 @media screen and (min-width: 1200px) {
   /* ------------------------- index.html -------------- */
   header,
-  main,
   footer {
     max-width: 1200px;
-    margin: 2% auto;
+    margin: 8% auto;
+  }
+
+  /* -------- main-visual ------- */
+  #main-visual p {
+    font-size: 3.2rem;
   }
 
   #service-popup {
@@ -75,5 +90,18 @@
 
   .nav-toggle {
     display: none;
+  }
+}
+/* 
+
+
+
+
+*/
+/* -----大きいPC幅向け---画面幅が1500px以上の時に適用される----- */
+@media screen and (min-width: 1500px) {
+  /* -------- main-visual ------- */
+  #main-visual p {
+    font-size: 4rem;
   }
 }

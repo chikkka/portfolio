@@ -1,37 +1,124 @@
+/* ----------------- works-archive ---------------- */
+.works-archive__date {
+  width: 50%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.72rem;
+  text-align: center;
+  /* background-color: aquamarine; */
+}
+
+.works-archive__ttl {
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.88rem;
+  text-align: center;
+  /* background-color: chocolate; */
+}
 /* ----------------- works-single ----------------- */
 #works-single__contents {
-  width: 60%;
+  width: 80%;
   height: auto;
   padding: 5% 0;
   margin: 2% auto 0 auto;
   text-align: center;
+  /* background-color: aliceblue; */
 }
 
 #works-single__ttl {
-  width: 100%;
+  width: 80%;
   height: auto;
-  font-size: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.99rem;
+  /* background-color: antiquewhite; */
+}
+
+#works-single__url {
+  font-size: 0.72rem;
+}
+
+#works-single__url a {
+  color: #f0b5b0;
+  text-decoration: none;
 }
 
 #works-single__date {
-  width: 90%;
+  width: 80%;
   height: auto;
-  font-size: 0.8rem;
-  margin: 2% auto 0 auto;
+  font-size: 0.72rem;
+  margin-left: auto;
+  margin-right: auto;
   text-align: right;
+  /* background-color: aquamarine; */
 }
 
 #works-single__txt {
-  width: 90%;
+  width: 80%;
   height: auto;
-  margin: 2% auto 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.88rem;
+  /* background-color: hotpink; */
+}
+#works-single__charge {
+  width: 100%;
+  height: auto;
+  margin-top: 8%;
+  font-size: 0.8rem;
+  text-align: left;
+  line-height: 1.6rem;
+  /* background-color: #f0b5b0; */
+}
+
+#works-single__used {
+  width: 100%;
+  height: auto;
+  margin-top: 12%;
+  font-size: 0.8rem;
+  text-align: left;
+  line-height: 1.6rem;
+  /* background-color: #f0b5b0; */
+}
+
+#works-single__goal {
+  width: 100%;
+  height: auto;
+  margin-top: 12%;
+  font-size: 0.8rem;
+  text-align: left;
+  line-height: 1.6rem;
+  /* background-color: #f0b5b0; */
+}
+
+#works-single__design {
+  width: 100%;
+  height: auto;
+  margin-top: 12%;
+  font-size: 0.8rem;
+  text-align: left;
+  line-height: 1.6rem;
+  /* background-color: #f0b5b0; */
+}
+
+#works-single__summary {
+  width: 100%;
+  height: auto;
+  margin-top: 12%;
+  font-size: 0.8rem;
+  text-align: left;
+  line-height: 1.6rem;
+  /* background-color: #f0b5b0; */
 }
 
 #works-single__thumbnail {
   width: 60%;
   height: auto;
-  margin: 6% auto 0 auto;
-  border-radius: 2em;
+  margin: 12% auto 0 auto;
+  border-radius: 1em;
   overflow: hidden;
 }
 
@@ -42,9 +129,18 @@
 }
 
 #works-single__back {
-  width: 60%;
-  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 32px;
   margin: 8% auto 0 auto;
-  font-size: 0.88rem;
-  text-align: center;
+  font-size: 0.8rem;
+  background-color: #f0b5b0;
+  border-radius: 1em;
+}
+
+#works-single__back a {
+  color: #fbf0e3;
+  text-decoration: none;
 }
