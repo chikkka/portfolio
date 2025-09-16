@@ -61,6 +61,11 @@
     height: auto;
   }
 
+  .service-popup__txt {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
   /* ------ blog ------ */
   .blog-wrap {
     padding: 8%;
